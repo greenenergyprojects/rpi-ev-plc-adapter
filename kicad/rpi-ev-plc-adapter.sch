@@ -1,0 +1,1700 @@
+EESchema Schematic File Version 4
+LIBS:rpi-ev-plc-adapter-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L project:Raspberry_RPI J1
+U 1 1 5E0489BF
+P 4450 2000
+F 0 "J1" H 3850 1900 50  0000 L CNN
+F 1 "Raspberry_RPI" H 5100 1900 50  0000 L CNN
+F 2 "Project:Raspberry-PI" H 3950 -1600 50  0001 C CNN
+F 3 "" H 4750 450 50  0001 C CNN
+	1    4450 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:I2PLCAMN-ISE-002-T M1
+U 1 1 5E048CF0
+P 7900 3550
+F 0 "M1" H 8100 4600 50  0000 C CNN
+F 1 "I2PLCAMN-ISE-002-T" H 9100 1450 50  0000 C CNN
+F 2 "Project:I2PLCAMN-ISE-002-T" H 8700 2250 50  0001 C CNN
+F 3 "" H 8600 2350 50  0001 C CNN
+	1    7900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:supply-5Vto3V3_ebay-303262143289 M2
+U 1 1 5E04AF2F
+P 3300 1100
+F 0 "M2" H 3800 1275 50  0000 C CNN
+F 1 "supply-5Vto3V3_ebay-303262143289" H 3800 1276 50  0001 C CNN
+F 2 "Project:supply-5Vto3V3_ebay-303262143289" H 3800 1000 25  0001 C CIN
+F 3 "" H 3850 700 50  0001 C CNN
+	1    3300 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:supply-5VtoPM12V_ebay-253052736386 M3
+U 1 1 5E04AF9E
+P 5850 1250
+F 0 "M3" H 6350 1625 50  0000 C CNN
+F 1 "supply-5VtoPM12V_ebay-253052736386" H 6350 1626 50  0001 C CNN
+F 2 "Project:5V-to-PM12V_ebay-253052736386" H 6400 1150 25  0001 C CIN
+F 3 "" H 6400 1050 50  0001 C CNN
+	1    5850 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5E04B1DE
+P 4400 850
+F 0 "#PWR0101" H 4400 700 50  0001 C CNN
+F 1 "+3V3" H 4415 1023 50  0000 C CNN
+F 2 "" H 4400 850 50  0001 C CNN
+F 3 "" H 4400 850 50  0001 C CNN
+	1    4400 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1100 4400 1100
+$Comp
+L power:+5V #PWR0102
+U 1 1 5E04B219
+P 3200 1000
+F 0 "#PWR0102" H 3200 850 50  0001 C CNN
+F 1 "+5V" H 3215 1173 50  0000 C CNN
+F 2 "" H 3200 1000 50  0001 C CNN
+F 3 "" H 3200 1000 50  0001 C CNN
+	1    3200 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1100 3200 1100
+Wire Wire Line
+	3200 1100 3200 1000
+$Comp
+L power:GND #PWR0103
+U 1 1 5E04B298
+P 3200 1400
+F 0 "#PWR0103" H 3200 1150 50  0001 C CNN
+F 1 "GND" H 3205 1227 50  0000 C CNN
+F 2 "" H 3200 1400 50  0001 C CNN
+F 3 "" H 3200 1400 50  0001 C CNN
+	1    3200 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1300 3200 1300
+Wire Wire Line
+	3200 1300 3200 1400
+$Comp
+L power:+5V #PWR0104
+U 1 1 5E04B2E6
+P 5750 950
+F 0 "#PWR0104" H 5750 800 50  0001 C CNN
+F 1 "+5V" H 5765 1123 50  0000 C CNN
+F 2 "" H 5750 950 50  0001 C CNN
+F 3 "" H 5750 950 50  0001 C CNN
+	1    5750 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5E04B2F9
+P 5750 1350
+F 0 "#PWR0105" H 5750 1100 50  0001 C CNN
+F 1 "GND" H 5755 1177 50  0000 C CNN
+F 2 "" H 5750 1350 50  0001 C CNN
+F 3 "" H 5750 1350 50  0001 C CNN
+	1    5750 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 1250 5750 1250
+Wire Wire Line
+	5750 1250 5750 1350
+Wire Wire Line
+	5850 1050 5750 1050
+Wire Wire Line
+	5750 1050 5750 950 
+$Comp
+L power:GND #PWR0106
+U 1 1 5E04B396
+P 6950 1350
+F 0 "#PWR0106" H 6950 1100 50  0001 C CNN
+F 1 "GND" H 6955 1177 50  0000 C CNN
+F 2 "" H 6950 1350 50  0001 C CNN
+F 3 "" H 6950 1350 50  0001 C CNN
+	1    6950 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 1250 6950 1250
+Wire Wire Line
+	6950 1250 6950 1350
+$Comp
+L power:+12V #PWR0107
+U 1 1 5E04B454
+P 6950 950
+F 0 "#PWR0107" H 6950 800 50  0001 C CNN
+F 1 "+12V" H 6965 1123 50  0000 C CNN
+F 2 "" H 6950 950 50  0001 C CNN
+F 3 "" H 6950 950 50  0001 C CNN
+	1    6950 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR0108
+U 1 1 5E04B489
+P 7250 950
+F 0 "#PWR0108" H 7250 1050 50  0001 C CNN
+F 1 "-12V" H 7265 1123 50  0000 C CNN
+F 2 "" H 7250 950 50  0001 C CNN
+F 3 "" H 7250 950 50  0001 C CNN
+	1    7250 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 1050 6950 1050
+Wire Wire Line
+	6950 1050 6950 950 
+Wire Wire Line
+	6850 1150 7250 1150
+Wire Wire Line
+	7250 1150 7250 950 
+$Comp
+L power:+5V #PWR0109
+U 1 1 5E04B9EF
+P 4900 1800
+F 0 "#PWR0109" H 4900 1650 50  0001 C CNN
+F 1 "+5V" H 4915 1973 50  0000 C CNN
+F 2 "" H 4900 1800 50  0001 C CNN
+F 3 "" H 4900 1800 50  0001 C CNN
+	1    4900 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2000 4850 1900
+Wire Wire Line
+	4850 1900 4900 1900
+Wire Wire Line
+	4950 1900 4950 2000
+Wire Wire Line
+	4900 1900 4900 1800
+Connection ~ 4900 1900
+Wire Wire Line
+	4900 1900 4950 1900
+$Comp
+L power:GND #PWR0110
+U 1 1 5E04BD19
+P 4300 5900
+F 0 "#PWR0110" H 4300 5650 50  0001 C CNN
+F 1 "GND" H 4305 5727 50  0000 C CNN
+F 2 "" H 4300 5900 50  0001 C CNN
+F 3 "" H 4300 5900 50  0001 C CNN
+	1    4300 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5700 4300 5800
+Wire Wire Line
+	4300 5800 4400 5800
+Wire Wire Line
+	5000 5800 5000 5700
+Wire Wire Line
+	4900 5700 4900 5800
+Connection ~ 4900 5800
+Wire Wire Line
+	4900 5800 5000 5800
+Wire Wire Line
+	4800 5700 4800 5800
+Connection ~ 4800 5800
+Wire Wire Line
+	4800 5800 4900 5800
+Wire Wire Line
+	4700 5700 4700 5800
+Connection ~ 4700 5800
+Wire Wire Line
+	4700 5800 4800 5800
+Wire Wire Line
+	4600 5700 4600 5800
+Connection ~ 4600 5800
+Wire Wire Line
+	4600 5800 4700 5800
+Wire Wire Line
+	4500 5700 4500 5800
+Connection ~ 4500 5800
+Wire Wire Line
+	4500 5800 4600 5800
+Wire Wire Line
+	4400 5700 4400 5800
+Connection ~ 4400 5800
+Wire Wire Line
+	4400 5800 4500 5800
+Wire Wire Line
+	4300 5800 4300 5900
+Connection ~ 4300 5800
+Wire Wire Line
+	4350 2000 4350 1900
+Wire Wire Line
+	4350 1900 4400 1900
+Wire Wire Line
+	4450 1900 4450 2000
+Connection ~ 4400 1900
+Wire Wire Line
+	4400 1900 4450 1900
+Wire Wire Line
+	4400 1400 4400 1100
+Connection ~ 4400 1100
+$Comp
+L project:push-button_ebay-183284526496 SW1
+U 1 1 5E0551EB
+P 6250 2500
+F 0 "SW1" H 6150 2600 50  0000 C CNN
+F 1 "push-button_ebay-183284526496" H 6250 2300 50  0001 C CNN
+F 2 "Project:push-button_ebay-183284526496" H 6250 2700 50  0001 C CNN
+F 3 "" H 6250 2700 50  0001 C CNN
+F 4 "black" H 6250 2400 50  0001 C CNN "color"
+	1    6250 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 5200 5800 5200
+$Comp
+L power:GND #PWR0111
+U 1 1 5E06B7E0
+P 8600 5800
+F 0 "#PWR0111" H 8600 5550 50  0001 C CNN
+F 1 "GND" H 8605 5627 50  0000 C CNN
+F 2 "" H 8600 5800 50  0001 C CNN
+F 3 "" H 8600 5800 50  0001 C CNN
+	1    8600 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5800 8600 5700
+$Comp
+L power:+3V3 #PWR0112
+U 1 1 5E0714A2
+P 7200 2500
+F 0 "#PWR0112" H 7200 2350 50  0001 C CNN
+F 1 "+3V3" H 7215 2673 50  0000 C CNN
+F 2 "" H 7200 2500 50  0001 C CNN
+F 3 "" H 7200 2500 50  0001 C CNN
+	1    7200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 5E077598
+P 4400 1500
+F 0 "JP1" V 4400 1548 50  0000 L CNN
+F 1 "Jumper_NO_Small" V 4445 1548 50  0001 L CNN
+F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 4400 1500 50  0001 C CNN
+F 3 "~" H 4400 1500 50  0001 C CNN
+	1    4400 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 1600 4400 1900
+$Comp
+L Device:R R7
+U 1 1 5E079689
+P 7250 3900
+F 0 "R7" V 7150 3800 50  0000 C CNN
+F 1 "47R" V 7150 4000 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 7180 3900 50  0001 C CNN
+F 3 "~" H 7250 3900 50  0001 C CNN
+	1    7250 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L project:push-button_ebay-183284526496 SW2
+U 1 1 5E07B501
+P 6300 3550
+F 0 "SW2" H 6150 3650 50  0000 C CNN
+F 1 "push-button_ebay-183284526496" H 6300 3350 50  0001 C CNN
+F 2 "Project:push-button_ebay-183284526496" H 6300 3750 50  0001 C CNN
+F 3 "" H 6300 3750 50  0001 C CNN
+F 4 "black" H 6300 3450 50  0001 C CNN "color"
+	1    6300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5E07D571
+P 7500 4150
+F 0 "R9" H 7550 4150 50  0000 L CNN
+F 1 "22K" H 7300 4150 50  0000 L CNN
+F 2 "Project:r-0805-hand-soldering" V 7430 4150 50  0001 C CNN
+F 3 "~" H 7500 4150 50  0001 C CNN
+	1    7500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5E07D719
+P 7000 4150
+F 0 "C3" H 7050 4250 50  0000 L CNN
+F 1 "100p" H 7050 4050 50  0000 L CNN
+F 2 "Project:c-1206-hand-soldering" H 7000 4150 50  0001 C CNN
+F 3 "~" H 7000 4150 50  0001 C CNN
+	1    7000 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E07E9CA
+P 6300 3900
+F 0 "R4" V 6200 3800 50  0000 C CNN
+F 1 "220R" V 6200 4000 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 6230 3900 50  0001 C CNN
+F 3 "~" H 6300 3900 50  0001 C CNN
+	1    6300 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5E080840
+P 7000 4350
+F 0 "#PWR0114" H 7000 4100 50  0001 C CNN
+F 1 "GND" H 7005 4177 50  0000 C CNN
+F 2 "" H 7000 4350 50  0001 C CNN
+F 3 "" H 7000 4350 50  0001 C CNN
+	1    7000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5E080867
+P 7500 4350
+F 0 "#PWR0115" H 7500 4100 50  0001 C CNN
+F 1 "GND" H 7505 4177 50  0000 C CNN
+F 2 "" H 7500 4350 50  0001 C CNN
+F 3 "" H 7500 4350 50  0001 C CNN
+	1    7500 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3900 5700 3900
+Wire Wire Line
+	6450 3900 6550 3900
+Wire Wire Line
+	7400 3900 7500 3900
+Wire Wire Line
+	7500 4000 7500 3900
+Wire Wire Line
+	7500 4350 7500 4300
+Wire Wire Line
+	7000 4350 7000 4250
+Wire Wire Line
+	7000 4050 7000 3900
+Wire Wire Line
+	7000 3900 7100 3900
+$Comp
+L Device:R R6
+U 1 1 5E09321E
+P 6950 3000
+F 0 "R6" V 6850 2900 50  0000 C CNN
+F 1 "47R" V 6850 3100 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 6880 3000 50  0001 C CNN
+F 3 "~" H 6950 3000 50  0001 C CNN
+	1    6950 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E093225
+P 7200 2750
+F 0 "R8" H 7250 2850 50  0000 L CNN
+F 1 "22K" H 7250 2750 50  0000 L CNN
+F 2 "Project:r-0805-hand-soldering" V 7130 2750 50  0001 C CNN
+F 3 "~" H 7200 2750 50  0001 C CNN
+	1    7200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E09322C
+P 6300 3000
+F 0 "R3" V 6200 2900 50  0000 C CNN
+F 1 "220R" V 6200 3100 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 6230 3000 50  0001 C CNN
+F 3 "~" H 6300 3000 50  0001 C CNN
+	1    6300 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 3000 6150 3000
+Wire Wire Line
+	7100 3000 7200 3000
+Wire Wire Line
+	6700 3100 6700 3000
+Connection ~ 6700 3000
+Wire Wire Line
+	6700 3000 6800 3000
+Wire Wire Line
+	7200 3000 7200 2900
+$Comp
+L Device:C_Small C2
+U 1 1 5E095B06
+P 6700 3200
+F 0 "C2" H 6750 3300 50  0000 L CNN
+F 1 "100p" H 6750 3100 50  0000 L CNN
+F 2 "Project:c-1206-hand-soldering" H 6700 3200 50  0001 C CNN
+F 3 "~" H 6700 3200 50  0001 C CNN
+	1    6700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3000 6550 3000
+Wire Wire Line
+	6550 3000 6550 2500
+Wire Wire Line
+	6550 2500 6450 2500
+Connection ~ 6550 3000
+Wire Wire Line
+	6550 3000 6700 3000
+$Comp
+L power:GND #PWR0116
+U 1 1 5E09CDEE
+P 6700 3400
+F 0 "#PWR0116" H 6700 3150 50  0001 C CNN
+F 1 "GND" H 6705 3227 50  0000 C CNN
+F 2 "" H 6700 3400 50  0001 C CNN
+F 3 "" H 6700 3400 50  0001 C CNN
+	1    6700 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 7200 3000
+Wire Wire Line
+	6700 3400 6700 3300
+$Comp
+L power:GND #PWR0117
+U 1 1 5E0A2528
+P 5950 2550
+F 0 "#PWR0117" H 5950 2300 50  0001 C CNN
+F 1 "GND" H 5950 2400 50  0000 C CNN
+F 2 "" H 5950 2550 50  0001 C CNN
+F 3 "" H 5950 2550 50  0001 C CNN
+	1    5950 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3000 5600 3000
+$Comp
+L Device:R R1
+U 1 1 5E0B55BA
+P 5750 4500
+F 0 "R1" H 5600 4600 50  0000 L CNN
+F 1 "47K" H 5550 4500 50  0000 L CNN
+F 2 "Project:r-0805-hand-soldering" V 5680 4500 50  0001 C CNN
+F 3 "~" H 5750 4500 50  0001 C CNN
+	1    5750 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4650 5750 4800
+$Comp
+L power:+3V3 #PWR0118
+U 1 1 5E0B6E27
+P 5750 4300
+F 0 "#PWR0118" H 5750 4150 50  0001 C CNN
+F 1 "+3V3" H 5765 4473 50  0000 C CNN
+F 2 "" H 5750 4300 50  0001 C CNN
+F 3 "" H 5750 4300 50  0001 C CNN
+	1    5750 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4350 5750 4300
+Wire Wire Line
+	5750 4800 5600 4800
+Connection ~ 5750 4800
+$Comp
+L Device:R R2
+U 1 1 5E0C6EBF
+P 5800 5450
+F 0 "R2" H 5650 5550 50  0000 L CNN
+F 1 "47K" H 5600 5450 50  0000 L CNN
+F 2 "Project:r-0805-hand-soldering" V 5730 5450 50  0001 C CNN
+F 3 "~" H 5800 5450 50  0001 C CNN
+	1    5800 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 5300 5800 5200
+Connection ~ 5800 5200
+Wire Wire Line
+	5800 5200 6100 5200
+$Comp
+L Device:R R5
+U 1 1 5E0C8966
+P 6700 5450
+F 0 "R5" H 6550 5550 50  0000 L CNN
+F 1 "47K" H 6500 5450 50  0000 L CNN
+F 2 "Project:r-0805-hand-soldering" V 6630 5450 50  0001 C CNN
+F 3 "~" H 6700 5450 50  0001 C CNN
+	1    6700 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5300 6700 5100
+$Comp
+L power:GND #PWR0119
+U 1 1 5E0CA503
+P 6700 5700
+F 0 "#PWR0119" H 6700 5450 50  0001 C CNN
+F 1 "GND" H 6705 5527 50  0000 C CNN
+F 2 "" H 6700 5700 50  0001 C CNN
+F 3 "" H 6700 5700 50  0001 C CNN
+	1    6700 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5700 6700 5600
+$Comp
+L power:GND #PWR0120
+U 1 1 5E0D0086
+P 5800 5700
+F 0 "#PWR0120" H 5800 5450 50  0001 C CNN
+F 1 "GND" H 5805 5527 50  0000 C CNN
+F 2 "" H 5800 5700 50  0001 C CNN
+F 3 "" H 5800 5700 50  0001 C CNN
+	1    5800 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2600 7200 2500
+$Comp
+L Connector_Generic:Conn_01x06 J2
+U 1 1 5E0E0AB3
+P 7300 5600
+F 0 "J2" V 7450 5250 50  0000 L CNN
+F 1 "Conn_01x06" V 7264 5880 50  0001 L CNN
+F 2 "Project:idc-header-1x06-p2.54mm-vertical" H 7300 5600 50  0001 C CNN
+F 3 "~" H 7300 5600 50  0001 C CNN
+	1    7300 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5E0E0C46
+P 7700 5450
+F 0 "#PWR0122" H 7700 5200 50  0001 C CNN
+F 1 "GND" H 7705 5277 50  0000 C CNN
+F 2 "" H 7700 5450 50  0001 C CNN
+F 3 "" H 7700 5450 50  0001 C CNN
+	1    7700 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5400 7500 5300
+Wire Wire Line
+	7500 5300 7700 5300
+Wire Wire Line
+	7700 5300 7700 5450
+Wire Wire Line
+	7400 5400 7400 4800
+Wire Wire Line
+	7300 5400 7300 4900
+Wire Wire Line
+	7200 5400 7200 5000
+Wire Wire Line
+	7100 5400 7100 5100
+Wire Wire Line
+	7000 5400 7000 5200
+Wire Wire Line
+	7500 3900 7500 3600
+Wire Wire Line
+	7200 3300 7200 3000
+$Comp
+L power:+3V3 #PWR0124
+U 1 1 5E12AF26
+P 8600 2000
+F 0 "#PWR0124" H 8600 1850 50  0001 C CNN
+F 1 "+3V3" H 8615 2173 50  0000 C CNN
+F 2 "" H 8600 2000 50  0001 C CNN
+F 3 "" H 8600 2000 50  0001 C CNN
+	1    8600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5E12AFD9
+P 8800 2200
+F 0 "C1" V 8900 2250 50  0000 L CNN
+F 1 "100n" V 8900 1950 50  0000 L CNN
+F 2 "Project:c-1206-hand-soldering" H 8800 2200 50  0001 C CNN
+F 3 "~" H 8800 2200 50  0001 C CNN
+	1    8800 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5E12B180
+P 9000 2300
+F 0 "#PWR0125" H 9000 2050 50  0001 C CNN
+F 1 "GND" H 9005 2127 50  0000 C CNN
+F 2 "" H 9000 2300 50  0001 C CNN
+F 3 "" H 9000 2300 50  0001 C CNN
+	1    9000 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2000 8600 2200
+Wire Wire Line
+	8700 2200 8600 2200
+Connection ~ 8600 2200
+Wire Wire Line
+	8600 2200 8600 2450
+Wire Wire Line
+	8900 2200 9000 2200
+Wire Wire Line
+	9000 2200 9000 2300
+$Sheet
+S 2150 2300 950  800 
+U 5E13857A
+F0 "Control-Pilot" 50
+F1 "control-pilot.sch" 50
+F2 "PWM" I R 3100 2500 50 
+F3 "VCP" O L 2150 2900 50 
+F4 "CP" O L 2150 2600 50 
+F5 "PE" U L 2150 2700 50 
+F6 "VCPLT11V5" O R 3100 2700 50 
+F7 "VCPLT7V5" O R 3100 2800 50 
+F8 "VCPLT3V5" O R 3100 2900 50 
+F9 "N" U L 2150 2500 50 
+$EndSheet
+Wire Wire Line
+	5800 5600 5800 5700
+Wire Wire Line
+	6500 5200 7000 5200
+Wire Wire Line
+	5750 4800 7400 4800
+Wire Wire Line
+	5600 4900 7300 4900
+Wire Wire Line
+	5600 5000 7200 5000
+Connection ~ 7000 5200
+Connection ~ 7100 5100
+Connection ~ 7200 5000
+Connection ~ 7300 4900
+Connection ~ 7400 4800
+Wire Wire Line
+	7300 4900 7900 4900
+Wire Wire Line
+	7200 5000 7900 5000
+Wire Wire Line
+	7100 5100 7900 5100
+Wire Wire Line
+	7000 5200 7900 5200
+Wire Wire Line
+	7400 4800 7900 4800
+Connection ~ 7500 3900
+Connection ~ 6700 5100
+Wire Wire Line
+	6700 5100 7100 5100
+Wire Wire Line
+	5600 5100 6700 5100
+$Comp
+L Device:R R36
+U 1 1 5E1B6C1C
+P 6100 4500
+F 0 "R36" H 5900 4600 50  0000 L CNN
+F 1 "1G" H 5900 4500 50  0000 L CNN
+F 2 "Project:r-0805-hand-soldering" V 6030 4500 50  0001 C CNN
+F 3 "~" H 6100 4500 50  0001 C CNN
+	1    6100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0121
+U 1 1 5E1B6CF7
+P 6100 4300
+F 0 "#PWR0121" H 6100 4150 50  0001 C CNN
+F 1 "+3V3" H 6115 4473 50  0000 C CNN
+F 2 "" H 6100 4300 50  0001 C CNN
+F 3 "" H 6100 4300 50  0001 C CNN
+	1    6100 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4350 6100 4300
+Wire Wire Line
+	6100 4650 6100 5200
+Connection ~ 6100 5200
+Wire Wire Line
+	6100 5200 6200 5200
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E1BF2FB
+P 2850 1000
+F 0 "#FLG0101" H 2850 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 2850 1174 50  0000 C CNN
+F 2 "" H 2850 1000 50  0001 C CNN
+F 3 "~" H 2850 1000 50  0001 C CNN
+	1    2850 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1100 2850 1100
+Wire Wire Line
+	2850 1100 2850 1000
+Connection ~ 3200 1100
+Wire Wire Line
+	3700 2700 3100 2700
+Wire Wire Line
+	3700 2800 3100 2800
+Wire Wire Line
+	3700 2900 3100 2900
+NoConn ~ 3700 5200
+NoConn ~ 3700 5100
+NoConn ~ 3700 4600
+NoConn ~ 3700 4300
+NoConn ~ 3700 4200
+$Comp
+L Connector_Generic:Conn_01x03 J8
+U 1 1 5E20DEA2
+P 3000 3900
+F 0 "J8" H 3100 3900 50  0000 C CNN
+F 1 "Conn_01x03" H 2920 3666 50  0001 C CNN
+F 2 "Project:idc-header-1x03-p2.54mm-vertical" H 3000 3900 50  0001 C CNN
+F 3 "~" H 3000 3900 50  0001 C CNN
+	1    3000 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J7
+U 1 1 5E20DF0A
+P 3000 3500
+F 0 "J7" H 3100 3500 50  0000 C CNN
+F 1 "Conn_01x03" H 2920 3266 50  0001 C CNN
+F 2 "Project:idc-header-1x03-p2.54mm-vertical" H 3000 3500 50  0001 C CNN
+F 3 "~" H 3000 3500 50  0001 C CNN
+	1    3000 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0145
+U 1 1 5E20E673
+P 3300 4100
+F 0 "#PWR0145" H 3300 3850 50  0001 C CNN
+F 1 "GND" H 3305 3927 50  0000 C CNN
+F 2 "" H 3300 4100 50  0001 C CNN
+F 3 "" H 3300 4100 50  0001 C CNN
+	1    3300 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4100 3300 4000
+Wire Wire Line
+	3300 4000 3200 4000
+Wire Wire Line
+	3300 4000 3300 3600
+Wire Wire Line
+	3300 3600 3200 3600
+Connection ~ 3300 4000
+Wire Wire Line
+	3200 3400 3700 3400
+Wire Wire Line
+	3200 3500 3700 3500
+Wire Wire Line
+	3200 3800 3700 3800
+Wire Wire Line
+	3200 3900 3700 3900
+NoConn ~ 3700 3100
+NoConn ~ 3700 3200
+NoConn ~ 3700 4000
+Wire Wire Line
+	9350 3000 9650 3000
+Text Label 10150 3200 0    50   ~ 0
+L-A
+Text Label 10150 3300 0    50   ~ 0
+L-B
+Text Label 10250 3000 0    50   ~ 0
+N
+$Comp
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R?
+U 1 1 5E2A00E2
+P 10750 4700
+AR Path="/5E13857A/5E2A00E2" Ref="R?"  Part="1" 
+AR Path="/5E2A00E2" Ref="R45"  Part="1" 
+F 0 "R45" H 10600 4800 50  0000 C CNN
+F 1 "880R" H 10600 4700 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 10680 4700 50  0001 C CNN
+F 3 "" H 10750 4700 50  0001 C CNN
+	1    10750 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E2A00E9
+P 10750 5100
+AR Path="/5E13857A/5E2A00E9" Ref="D?"  Part="1" 
+AR Path="/5E2A00E9" Ref="D8"  Part="1" 
+F 0 "D8" V 10788 4983 50  0000 R CNN
+F 1 "LED" V 10697 4983 50  0000 R CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 10750 5100 50  0001 C CNN
+F 3 "~" H 10750 5100 50  0001 C CNN
+F 4 "green" V 10600 4850 50  0000 C CNN "color"
+	1    10750 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10750 4850 10750 4950
+Wire Wire Line
+	10750 4550 10750 4250
+Wire Wire Line
+	10750 4250 9350 4250
+$Comp
+L power:GND #PWR0146
+U 1 1 5E2B148A
+P 10750 5350
+F 0 "#PWR0146" H 10750 5100 50  0001 C CNN
+F 1 "GND" H 10755 5177 50  0000 C CNN
+F 2 "" H 10750 5350 50  0001 C CNN
+F 3 "" H 10750 5350 50  0001 C CNN
+	1    10750 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 5250 10750 5350
+$Comp
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R?
+U 1 1 5E2C2D62
+P 10300 4700
+AR Path="/5E13857A/5E2C2D62" Ref="R?"  Part="1" 
+AR Path="/5E2C2D62" Ref="R43"  Part="1" 
+F 0 "R43" H 10150 4800 50  0000 C CNN
+F 1 "1K2" H 10150 4700 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 10230 4700 50  0001 C CNN
+F 3 "" H 10300 4700 50  0001 C CNN
+	1    10300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E2C2D69
+P 10300 5100
+AR Path="/5E13857A/5E2C2D69" Ref="D?"  Part="1" 
+AR Path="/5E2C2D69" Ref="D7"  Part="1" 
+F 0 "D7" V 10338 4983 50  0000 R CNN
+F 1 "LED" V 10247 4983 50  0000 R CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 10300 5100 50  0001 C CNN
+F 3 "~" H 10300 5100 50  0001 C CNN
+F 4 "red" V 10150 4900 50  0000 C CNN "color"
+	1    10300 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10300 4850 10300 4950
+$Comp
+L power:GND #PWR0147
+U 1 1 5E2C2D71
+P 10300 5350
+F 0 "#PWR0147" H 10300 5100 50  0001 C CNN
+F 1 "GND" H 10305 5177 50  0000 C CNN
+F 2 "" H 10300 5350 50  0001 C CNN
+F 3 "" H 10300 5350 50  0001 C CNN
+	1    10300 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 5250 10300 5350
+Wire Wire Line
+	10300 4550 10300 4350
+Wire Wire Line
+	10300 4350 9350 4350
+$Comp
+L Device:R R38
+U 1 1 5E2F4C7A
+P 7600 2450
+F 0 "R38" H 7650 2450 50  0000 L CNN
+F 1 "47K" H 7400 2450 50  0000 L CNN
+F 2 "Project:r-0805-hand-soldering" V 7530 2450 50  0001 C CNN
+F 3 "~" H 7600 2450 50  0001 C CNN
+	1    7600 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R37
+U 1 1 5E2F4D6D
+P 7600 1950
+F 0 "R37" H 7650 1950 50  0000 L CNN
+F 1 "1G" H 7450 1950 50  0000 L CNN
+F 2 "Project:r-0805-hand-soldering" V 7530 1950 50  0001 C CNN
+F 3 "~" H 7600 1950 50  0001 C CNN
+	1    7600 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0148
+U 1 1 5E2F4DD9
+P 7600 2700
+F 0 "#PWR0148" H 7600 2450 50  0001 C CNN
+F 1 "GND" H 7605 2527 50  0000 C CNN
+F 2 "" H 7600 2700 50  0001 C CNN
+F 3 "" H 7600 2700 50  0001 C CNN
+	1    7600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0149
+U 1 1 5E2F4FA5
+P 7600 1700
+F 0 "#PWR0149" H 7600 1550 50  0001 C CNN
+F 1 "+3V3" H 7615 1873 50  0000 C CNN
+F 2 "" H 7600 1700 50  0001 C CNN
+F 3 "" H 7600 1700 50  0001 C CNN
+	1    7600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1800 7600 1700
+Wire Wire Line
+	7600 2600 7600 2700
+Wire Wire Line
+	7200 3300 7900 3300
+Wire Wire Line
+	7900 3000 7800 3000
+Wire Wire Line
+	7800 3000 7800 2200
+Wire Wire Line
+	7800 2200 7600 2200
+Wire Wire Line
+	7600 2200 7600 2100
+Wire Wire Line
+	7600 2200 7600 2300
+Connection ~ 7600 2200
+$Comp
+L Device:R R44
+U 1 1 5E32F583
+P 10750 4000
+F 0 "R44" H 10550 4050 50  0000 L CNN
+F 1 "1G" H 10600 3950 50  0000 L CNN
+F 2 "Project:r-0805-hand-soldering" V 10680 4000 50  0001 C CNN
+F 3 "~" H 10750 4000 50  0001 C CNN
+	1    10750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R42
+U 1 1 5E32F6F3
+P 10300 4000
+F 0 "R42" H 10100 4050 50  0000 L CNN
+F 1 "1G" H 10150 3950 50  0000 L CNN
+F 2 "Project:r-0805-hand-soldering" V 10230 4000 50  0001 C CNN
+F 3 "~" H 10300 4000 50  0001 C CNN
+	1    10300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0150
+U 1 1 5E32F818
+P 10750 3750
+F 0 "#PWR0150" H 10750 3600 50  0001 C CNN
+F 1 "+3V3" H 10765 3923 50  0000 C CNN
+F 2 "" H 10750 3750 50  0001 C CNN
+F 3 "" H 10750 3750 50  0001 C CNN
+	1    10750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0151
+U 1 1 5E32F8DC
+P 10300 3750
+F 0 "#PWR0151" H 10300 3600 50  0001 C CNN
+F 1 "+3V3" H 10315 3923 50  0000 C CNN
+F 2 "" H 10300 3750 50  0001 C CNN
+F 3 "" H 10300 3750 50  0001 C CNN
+	1    10300 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 3850 10300 3750
+Wire Wire Line
+	10750 3850 10750 3750
+Wire Wire Line
+	10300 4350 10300 4150
+Connection ~ 10300 4350
+Wire Wire Line
+	10750 4250 10750 4150
+Connection ~ 10750 4250
+Text Label 9400 4250 0    50   ~ 0
+CONNECTED
+Text Label 9400 4350 0    50   ~ 0
+CONNECTING
+$Comp
+L Device:R R39
+U 1 1 5E37AB68
+P 9650 2750
+F 0 "R39" H 9700 2750 50  0000 L CNN
+F 1 "0R" H 9500 2750 50  0000 L CNN
+F 2 "Project:r-0805-hand-soldering" V 9580 2750 50  0001 C CNN
+F 3 "~" H 9650 2750 50  0001 C CNN
+	1    9650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R40
+U 1 1 5E37B018
+P 9650 3550
+F 0 "R40" H 9450 3600 50  0000 L CNN
+F 1 "0R" H 9500 3500 50  0000 L CNN
+F 2 "Project:r-0805-hand-soldering" V 9580 3550 50  0001 C CNN
+F 3 "~" H 9650 3550 50  0001 C CNN
+	1    9650 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R41
+U 1 1 5E37B096
+P 9950 3550
+F 0 "R41" H 10000 3600 50  0000 L CNN
+F 1 "0R" H 10000 3500 50  0000 L CNN
+F 2 "Project:r-0805-hand-soldering" V 9880 3550 50  0001 C CNN
+F 3 "~" H 9950 3550 50  0001 C CNN
+	1    9950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3000 9650 2900
+Connection ~ 9650 3000
+Wire Wire Line
+	9650 2600 9650 2500
+Wire Wire Line
+	9650 2500 10400 2500
+Text Label 10200 2500 0    50   ~ 0
+CP
+Wire Wire Line
+	9650 3000 10400 3000
+Wire Wire Line
+	9350 3200 9650 3200
+Wire Wire Line
+	9350 3300 9950 3300
+Wire Wire Line
+	9650 3400 9650 3200
+Connection ~ 9650 3200
+Wire Wire Line
+	9650 3200 10400 3200
+Wire Wire Line
+	9950 3400 9950 3300
+Connection ~ 9950 3300
+Wire Wire Line
+	9950 3300 10400 3300
+$Comp
+L power:GND #PWR0152
+U 1 1 5E3AC0A1
+P 9650 3800
+F 0 "#PWR0152" H 9650 3550 50  0001 C CNN
+F 1 "GND" H 9655 3627 50  0000 C CNN
+F 2 "" H 9650 3800 50  0001 C CNN
+F 3 "" H 9650 3800 50  0001 C CNN
+	1    9650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 5E3AC0FC
+P 9950 3800
+F 0 "#PWR0153" H 9950 3550 50  0001 C CNN
+F 1 "GND" H 9955 3627 50  0000 C CNN
+F 2 "" H 9950 3800 50  0001 C CNN
+F 3 "" H 9950 3800 50  0001 C CNN
+	1    9950 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3700 9650 3800
+Wire Wire Line
+	9950 3700 9950 3800
+Wire Wire Line
+	6050 2500 5950 2500
+Wire Wire Line
+	5950 2500 5950 2550
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E4B3D9F
+P 2600 1200
+F 0 "#FLG0102" H 2600 1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 2600 1374 50  0000 C CNN
+F 2 "" H 2600 1200 50  0001 C CNN
+F 3 "~" H 2600 1200 50  0001 C CNN
+	1    2600 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1200 2600 1300
+Wire Wire Line
+	2600 1300 3200 1300
+Connection ~ 3200 1300
+Wire Wire Line
+	3700 2500 3650 2500
+Wire Wire Line
+	3100 2500 3250 2500
+Wire Wire Line
+	3250 2050 3250 2500
+Connection ~ 3250 2500
+Wire Wire Line
+	3250 2500 3350 2500
+$Comp
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R?
+U 1 1 5E85A611
+P 2500 5350
+AR Path="/5E13857A/5E85A611" Ref="R?"  Part="1" 
+AR Path="/5E85A611" Ref="R46"  Part="1" 
+F 0 "R46" H 2350 5450 50  0000 C CNN
+F 1 "1K2" H 2350 5350 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 2430 5350 50  0001 C CNN
+F 3 "" H 2500 5350 50  0001 C CNN
+	1    2500 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E85A618
+P 2500 5750
+AR Path="/5E13857A/5E85A618" Ref="D?"  Part="1" 
+AR Path="/5E85A618" Ref="D9"  Part="1" 
+F 0 "D9" V 2538 5633 50  0000 R CNN
+F 1 "LED" V 2447 5633 50  0000 R CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 2500 5750 50  0001 C CNN
+F 3 "~" H 2500 5750 50  0001 C CNN
+F 4 "red" V 2350 5575 50  0000 C CNN "color"
+	1    2500 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2500 5500 2500 5600
+$Comp
+L power:GND #PWR0156
+U 1 1 5E85A620
+P 2500 6000
+F 0 "#PWR0156" H 2500 5750 50  0001 C CNN
+F 1 "GND" H 2505 5827 50  0000 C CNN
+F 2 "" H 2500 6000 50  0001 C CNN
+F 3 "" H 2500 6000 50  0001 C CNN
+	1    2500 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 5900 2500 6000
+Wire Wire Line
+	2500 5200 2500 4800
+$Comp
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R?
+U 1 1 5E866216
+P 2900 5350
+AR Path="/5E13857A/5E866216" Ref="R?"  Part="1" 
+AR Path="/5E866216" Ref="R47"  Part="1" 
+F 0 "R47" H 2750 5450 50  0000 C CNN
+F 1 "220R" H 2750 5350 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 2830 5350 50  0001 C CNN
+F 3 "" H 2900 5350 50  0001 C CNN
+	1    2900 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E86621D
+P 2900 5750
+AR Path="/5E13857A/5E86621D" Ref="D?"  Part="1" 
+AR Path="/5E86621D" Ref="D10"  Part="1" 
+F 0 "D10" V 2938 5633 50  0000 R CNN
+F 1 "LED" V 2847 5633 50  0000 R CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 2900 5750 50  0001 C CNN
+F 3 "~" H 2900 5750 50  0001 C CNN
+F 4 "blue" V 2750 5550 50  0000 C CNN "color"
+	1    2900 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 5500 2900 5600
+$Comp
+L power:GND #PWR0157
+U 1 1 5E866225
+P 2900 6000
+F 0 "#PWR0157" H 2900 5750 50  0001 C CNN
+F 1 "GND" H 2905 5827 50  0000 C CNN
+F 2 "" H 2900 6000 50  0001 C CNN
+F 3 "" H 2900 6000 50  0001 C CNN
+	1    2900 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 5900 2900 6000
+Wire Wire Line
+	2900 5200 2900 4900
+$Comp
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R?
+U 1 1 5E8724DA
+P 3300 5350
+AR Path="/5E13857A/5E8724DA" Ref="R?"  Part="1" 
+AR Path="/5E8724DA" Ref="R48"  Part="1" 
+F 0 "R48" H 3150 5450 50  0000 C CNN
+F 1 "880R" H 3150 5350 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 3230 5350 50  0001 C CNN
+F 3 "" H 3300 5350 50  0001 C CNN
+	1    3300 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E8724E1
+P 3300 5750
+AR Path="/5E13857A/5E8724E1" Ref="D?"  Part="1" 
+AR Path="/5E8724E1" Ref="D11"  Part="1" 
+F 0 "D11" V 3338 5633 50  0000 R CNN
+F 1 "LED" V 3247 5633 50  0000 R CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 3300 5750 50  0001 C CNN
+F 3 "~" H 3300 5750 50  0001 C CNN
+F 4 "green" V 3150 5525 50  0000 C CNN "color"
+	1    3300 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3300 5500 3300 5600
+$Comp
+L power:GND #PWR0158
+U 1 1 5E8724E9
+P 3300 6000
+F 0 "#PWR0158" H 3300 5750 50  0001 C CNN
+F 1 "GND" H 3305 5827 50  0000 C CNN
+F 2 "" H 3300 6000 50  0001 C CNN
+F 3 "" H 3300 6000 50  0001 C CNN
+	1    3300 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 5900 3300 6000
+Wire Wire Line
+	3300 5200 3300 5000
+Wire Wire Line
+	3700 4800 2500 4800
+Wire Wire Line
+	2900 4900 3700 4900
+Wire Wire Line
+	3300 5000 3700 5000
+$Comp
+L project:dip-switch-6x2pos-smd-1.27mm SW5
+U 1 1 5E8D9A41
+P 3500 2500
+F 0 "SW5" H 3500 2613 50  0000 C CNN
+F 1 "dip-switch-6x2pos-smd-1.27mm" H 3550 2400 50  0001 C CNN
+F 2 "Project:dip-switch-6x2pos-smd-1.27mm" H 3400 2780 50  0001 C CNN
+F 3 "~" H 3500 2500 50  0001 C CNN
+	1    3500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:dip-switch-6x2pos-smd-1.27mm SW5
+U 2 1 5E8D9E36
+P 5850 3000
+F 0 "SW5" H 5850 3113 50  0000 C CNN
+F 1 "dip-switch-6x2pos-smd-1.27mm" H 5900 2900 50  0001 C CNN
+F 2 "Project:dip-switch-6x2pos-smd-1.27mm" H 5750 3280 50  0001 C CNN
+F 3 "~" H 5850 3000 50  0001 C CNN
+	2    5850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:dip-switch-6x2pos-smd-1.27mm SW5
+U 4 1 5E8DA23F
+P 6350 5200
+F 0 "SW5" H 6350 5313 50  0000 C CNN
+F 1 "dip-switch-6x2pos-smd-1.27mm" H 6400 5100 50  0001 C CNN
+F 2 "Project:dip-switch-6x2pos-smd-1.27mm" H 6250 5480 50  0001 C CNN
+F 3 "~" H 6350 5200 50  0001 C CNN
+	4    6350 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:dip-switch-6x2pos-smd-1.27mm SW5
+U 5 1 5E8DA2C1
+P 2350 4550
+F 0 "SW5" H 2350 4450 50  0000 C CNN
+F 1 "dip-switch-6x2pos-smd-1.27mm" H 2400 4450 50  0001 C CNN
+F 2 "Project:dip-switch-6x2pos-smd-1.27mm" H 2250 4830 50  0001 C CNN
+F 3 "~" H 2350 4550 50  0001 C CNN
+	5    2350 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:dip-switch-6x2pos-smd-1.27mm SW5
+U 6 1 5E8DA349
+P 2350 4350
+F 0 "SW5" H 2350 4463 50  0000 C CNN
+F 1 "dip-switch-6x2pos-smd-1.27mm" H 2400 4250 50  0001 C CNN
+F 2 "Project:dip-switch-6x2pos-smd-1.27mm" H 2250 4630 50  0001 C CNN
+F 3 "~" H 2350 4350 50  0001 C CNN
+	6    2350 4350
+	1    0    0    -1  
+$EndComp
+Text Label 6750 4800 0    50   ~ 0
+~CE
+Text Label 6750 4900 0    50   ~ 0
+SCLK
+Text Label 6750 5000 0    50   ~ 0
+MOSI
+Text Label 6750 5100 0    50   ~ 0
+MISO
+Text Label 6750 5200 0    50   ~ 0
+IRQ
+$Comp
+L Device:R R49
+U 1 1 5E953015
+P 2750 4350
+F 0 "R49" V 2650 4250 50  0000 C CNN
+F 1 "220R" V 2650 4450 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 2680 4350 50  0001 C CNN
+F 3 "~" H 2750 4350 50  0001 C CNN
+	1    2750 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R50
+U 1 1 5E95319D
+P 2750 4550
+F 0 "R50" V 2650 4450 50  0000 C CNN
+F 1 "220R" V 2650 4650 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 2680 4550 50  0001 C CNN
+F 3 "~" H 2750 4550 50  0001 C CNN
+	1    2750 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 4350 2500 4350
+Wire Wire Line
+	2600 4550 2500 4550
+Wire Wire Line
+	2900 4550 3600 4550
+Wire Wire Line
+	3600 4550 3600 4500
+Wire Wire Line
+	3600 4500 3700 4500
+Wire Wire Line
+	2900 4350 3600 4350
+Wire Wire Line
+	3600 4350 3600 4400
+Wire Wire Line
+	3600 4400 3700 4400
+$Comp
+L power:GND #PWR0159
+U 1 1 5E9A5085
+P 2100 4650
+F 0 "#PWR0159" H 2100 4400 50  0001 C CNN
+F 1 "GND" H 2105 4477 50  0000 C CNN
+F 2 "" H 2100 4650 50  0001 C CNN
+F 3 "" H 2100 4650 50  0001 C CNN
+	1    2100 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4650 2100 4550
+Wire Wire Line
+	2100 4350 2200 4350
+Wire Wire Line
+	2200 4550 2100 4550
+Connection ~ 2100 4550
+Wire Wire Line
+	2100 4550 2100 4350
+Wire Wire Line
+	3250 2050 1700 2050
+Wire Wire Line
+	950  1550 1050 1550
+Wire Wire Line
+	950  1450 1700 1450
+Wire Wire Line
+	950  1350 1400 1350
+Wire Wire Line
+	950  1250 1500 1250
+Wire Wire Line
+	950  1150 1600 1150
+Wire Wire Line
+	950  1050 2050 1050
+Wire Wire Line
+	950  950  2050 950 
+$Comp
+L power:GND #PWR0127
+U 1 1 5E511715
+P 1050 1650
+F 0 "#PWR0127" H 1050 1400 50  0001 C CNN
+F 1 "GND" H 1055 1477 50  0000 C CNN
+F 2 "" H 1050 1650 50  0001 C CNN
+F 3 "" H 1050 1650 50  0001 C CNN
+	1    1050 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1650 1050 1550
+Connection ~ 1050 1550
+Wire Wire Line
+	1050 1550 2050 1550
+Text Label 1000 1350 0    50   ~ 0
+PE
+Text Label 1000 1250 0    50   ~ 0
+CP
+Text Label 1000 1150 0    50   ~ 0
+N
+Text Label 1000 1050 0    50   ~ 0
+L-A
+Text Label 1000 950  0    50   ~ 0
+L-B
+Text Label 1000 1450 0    50   ~ 0
+PWM
+Text Label 1100 3750 0    50   ~ 0
+VCP
+$Comp
+L Connector_Generic:Conn_01x07 J5
+U 1 1 5E5230CE
+P 750 1250
+F 0 "J5" H 670 725 50  0000 C CNN
+F 1 "header" H 670 816 50  0000 C CNN
+F 2 "Project:idc-header-1x07-p2.54mm-vertical" H 750 1250 50  0001 C CNN
+F 3 "~" H 750 1250 50  0001 C CNN
+	1    750  1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J9
+U 1 1 5E524EA0
+P 2000 3750
+F 0 "J9" H 2000 3350 50  0000 C CNN
+F 1 "socket" H 2000 3450 50  0000 C CNN
+F 2 "Project:idc-socket-1x04-p2.54mm-vertical" H 2000 3750 50  0001 C CNN
+F 3 "~" H 2000 3750 50  0001 C CNN
+	1    2000 3750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1000 3850 1100 3850
+$Comp
+L power:GND #PWR0154
+U 1 1 5E569BEE
+P 1100 4000
+F 0 "#PWR0154" H 1100 3750 50  0001 C CNN
+F 1 "GND" H 1105 3827 50  0000 C CNN
+F 2 "" H 1100 4000 50  0001 C CNN
+F 3 "" H 1100 4000 50  0001 C CNN
+	1    1100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 4000 1100 3850
+Connection ~ 1100 3850
+Text Label 1100 3550 0    50   ~ 0
+CONNECTED
+Text Label 1100 3650 0    50   ~ 0
+CONNECTING
+Wire Wire Line
+	1000 3550 1800 3550
+Wire Wire Line
+	1000 3650 1800 3650
+Wire Wire Line
+	1000 3750 1650 3750
+Wire Wire Line
+	1100 3850 1800 3850
+Wire Wire Line
+	1700 2050 1700 1450
+Connection ~ 1700 1450
+Wire Wire Line
+	1700 1450 2050 1450
+Wire Wire Line
+	2150 2500 1600 2500
+Wire Wire Line
+	1600 2500 1600 1150
+Connection ~ 1600 1150
+Wire Wire Line
+	1600 1150 2050 1150
+Wire Wire Line
+	2150 2600 1500 2600
+Wire Wire Line
+	1500 2600 1500 1250
+Connection ~ 1500 1250
+Wire Wire Line
+	1500 1250 2050 1250
+Wire Wire Line
+	2150 2700 1400 2700
+Wire Wire Line
+	1400 2700 1400 1350
+Connection ~ 1400 1350
+Wire Wire Line
+	1400 1350 2050 1350
+Wire Wire Line
+	2150 2900 1650 2900
+Wire Wire Line
+	1650 2900 1650 3750
+Connection ~ 1650 3750
+Wire Wire Line
+	1650 3750 1800 3750
+$Comp
+L Connector_Generic:Conn_01x06 J3
+U 1 1 5E63EF27
+P 800 3650
+F 0 "J3" H 720 3125 50  0000 C CNN
+F 1 "header" H 720 3216 50  0000 C CNN
+F 2 "Project:idc-header-1x06-p2.54mm-vertical" H 800 3650 50  0001 C CNN
+F 3 "~" H 800 3650 50  0001 C CNN
+	1    800  3650
+	-1   0    0    1   
+$EndComp
+Text Label 7500 3300 0    50   ~ 0
+~RESET
+Connection ~ 7000 3900
+Text Label 7500 3600 0    50   ~ 0
+SMPLCONN
+Wire Wire Line
+	7900 3600 7500 3600
+Text Label 1100 3450 0    50   ~ 0
+SMPLCONN
+Text Label 1100 3350 0    50   ~ 0
+~RESET
+Wire Wire Line
+	1000 3350 1400 3350
+Wire Wire Line
+	1000 3450 1550 3450
+$Comp
+L Connector_Generic:Conn_01x09 J10
+U 1 1 5E6F6324
+P 2250 1350
+F 0 "J10" H 2169 725 50  0000 C CNN
+F 1 "socket" H 2169 816 50  0000 C CNN
+F 2 "Project:idc-socket-1x09-p2.54mm-vertical" H 2250 1350 50  0001 C CNN
+F 3 "~" H 2250 1350 50  0001 C CNN
+	1    2250 1350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2050 1650 1950 1650
+Wire Wire Line
+	1950 1650 1950 750 
+Wire Wire Line
+	2050 1750 1850 1750
+Wire Wire Line
+	1850 1750 1850 850 
+$Comp
+L power:+12V #PWR0123
+U 1 1 5E74CF32
+P 1700 750
+F 0 "#PWR0123" H 1700 600 50  0001 C CNN
+F 1 "+12V" H 1715 923 50  0000 C CNN
+F 2 "" H 1700 750 50  0001 C CNN
+F 3 "" H 1700 750 50  0001 C CNN
+	1    1700 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR0155
+U 1 1 5E74D075
+P 1950 750
+F 0 "#PWR0155" H 1950 850 50  0001 C CNN
+F 1 "-12V" H 1965 923 50  0000 C CNN
+F 2 "" H 1950 750 50  0001 C CNN
+F 3 "" H 1950 750 50  0001 C CNN
+	1    1950 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 850  1700 850 
+Wire Wire Line
+	1700 850  1700 750 
+$Comp
+L project:dip-switch-6x2pos-smd-1.27mm SW5
+U 3 1 5E8DA1BD
+P 5850 3900
+F 0 "SW5" H 5850 4013 50  0000 C CNN
+F 1 "dip-switch-6x2pos-smd-1.27mm" H 5900 3800 50  0001 C CNN
+F 2 "Project:dip-switch-6x2pos-smd-1.27mm" H 5750 4180 50  0001 C CNN
+F 3 "~" H 5850 3900 50  0001 C CNN
+	3    5850 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3900 6150 3900
+Wire Wire Line
+	6500 3550 6550 3550
+Wire Wire Line
+	6550 3550 6550 3900
+Connection ~ 6550 3900
+$Comp
+L power:+3V3 #PWR0113
+U 1 1 5E79E6BD
+P 6000 3450
+F 0 "#PWR0113" H 6000 3300 50  0001 C CNN
+F 1 "+3V3" H 6015 3623 50  0000 C CNN
+F 2 "" H 6000 3450 50  0001 C CNN
+F 3 "" H 6000 3450 50  0001 C CNN
+	1    6000 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3450 6000 3550
+Wire Wire Line
+	6000 3550 6100 3550
+Wire Wire Line
+	6550 3900 7000 3900
+$Comp
+L power:GND #PWR0160
+U 1 1 5E7AE876
+P 5100 1350
+F 0 "#PWR0160" H 5100 1100 50  0001 C CNN
+F 1 "GND" H 5105 1177 50  0000 C CNN
+F 2 "" H 5100 1350 50  0001 C CNN
+F 3 "" H 5100 1350 50  0001 C CNN
+	1    5100 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1300 5100 1350
+$Comp
+L Device:LED D?
+U 1 1 5E7AE86E
+P 5100 1150
+AR Path="/5E13857A/5E7AE86E" Ref="D?"  Part="1" 
+AR Path="/5E7AE86E" Ref="D12"  Part="1" 
+F 0 "D12" V 5138 1033 50  0000 R CNN
+F 1 "LED" V 5047 1033 50  0000 R CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 5100 1150 50  0001 C CNN
+F 3 "~" H 5100 1150 50  0001 C CNN
+F 4 "green" V 4950 950 50  0000 C CNN "color"
+	1    5100 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R51
+U 1 1 5E7CD3EB
+P 4750 950
+F 0 "R51" V 4650 850 50  0000 C CNN
+F 1 "880R" V 4650 1050 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 4680 950 50  0001 C CNN
+F 3 "~" H 4750 950 50  0001 C CNN
+	1    4750 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 950  4600 950 
+Wire Wire Line
+	4900 950  5100 950 
+Connection ~ 4400 950 
+Wire Wire Line
+	4400 950  4400 850 
+Wire Wire Line
+	4400 950  4400 1100
+Wire Wire Line
+	5100 1000 5100 950 
+$EndSCHEMATC
