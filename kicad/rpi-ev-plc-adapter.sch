@@ -42,7 +42,7 @@ U 1 1 5E04AF2F
 P 3300 1100
 F 0 "M2" H 3800 1275 50  0000 C CNN
 F 1 "supply-5Vto3V3_ebay-303262143289" H 3800 1276 50  0001 C CNN
-F 2 "Project:supply-5Vto3V3_ebay-303262143289" H 3800 1000 25  0001 C CIN
+F 2 "Project:dc-dc-buck-converter-5v-to-3.3v-2a" H 3800 1000 25  0001 C CIN
 F 3 "" H 3850 700 50  0001 C CNN
 	1    3300 1100
 	1    0    0    -1  
@@ -179,12 +179,12 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0109
 U 1 1 5E04B9EF
-P 4900 1800
-F 0 "#PWR0109" H 4900 1650 50  0001 C CNN
-F 1 "+5V" H 4915 1973 50  0000 C CNN
-F 2 "" H 4900 1800 50  0001 C CNN
-F 3 "" H 4900 1800 50  0001 C CNN
-	1    4900 1800
+P 4900 1750
+F 0 "#PWR0109" H 4900 1600 50  0001 C CNN
+F 1 "+5V" H 4915 1923 50  0000 C CNN
+F 2 "" H 4900 1750 50  0001 C CNN
+F 3 "" H 4900 1750 50  0001 C CNN
+	1    4900 1750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -194,7 +194,7 @@ Wire Wire Line
 Wire Wire Line
 	4950 1900 4950 2000
 Wire Wire Line
-	4900 1900 4900 1800
+	4900 1900 4900 1750
 Connection ~ 4900 1900
 Wire Wire Line
 	4900 1900 4950 1900
@@ -252,11 +252,6 @@ Wire Wire Line
 	4350 2000 4350 1900
 Wire Wire Line
 	4350 1900 4400 1900
-Wire Wire Line
-	4450 1900 4450 2000
-Connection ~ 4400 1900
-Wire Wire Line
-	4400 1900 4450 1900
 Wire Wire Line
 	4400 1400 4400 1100
 Connection ~ 4400 1100
@@ -552,8 +547,6 @@ F 3 "~" H 6700 5450 50  0001 C CNN
 	1    6700 5450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6700 5300 6700 5100
 $Comp
 L power:GND #PWR0119
 U 1 1 5E0CA503
@@ -610,10 +603,6 @@ Wire Wire Line
 	7700 5300 7700 5450
 Wire Wire Line
 	7400 5400 7400 4800
-Wire Wire Line
-	7300 5400 7300 4900
-Wire Wire Line
-	7200 5400 7200 5000
 Wire Wire Line
 	7100 5400 7100 5100
 Wire Wire Line
@@ -675,9 +664,9 @@ F2 "PWM" I R 3100 2500 50
 F3 "VCP" O L 2150 2900 50 
 F4 "CP" O L 2150 2600 50 
 F5 "PE" U L 2150 2700 50 
-F6 "VCPLT11V5" O R 3100 2700 50 
+F6 "VCPLT11V5" O R 3100 2900 50 
 F7 "VCPLT7V5" O R 3100 2800 50 
-F8 "VCPLT3V5" O R 3100 2900 50 
+F8 "VCPLT3V5" O R 3100 2700 50 
 F9 "N" U L 2150 2500 50 
 $EndSheet
 Wire Wire Line
@@ -686,19 +675,9 @@ Wire Wire Line
 	6500 5200 7000 5200
 Wire Wire Line
 	5750 4800 7400 4800
-Wire Wire Line
-	5600 4900 7300 4900
-Wire Wire Line
-	5600 5000 7200 5000
 Connection ~ 7000 5200
 Connection ~ 7100 5100
-Connection ~ 7200 5000
-Connection ~ 7300 4900
 Connection ~ 7400 4800
-Wire Wire Line
-	7300 4900 7900 4900
-Wire Wire Line
-	7200 5000 7900 5000
 Wire Wire Line
 	7100 5100 7900 5100
 Wire Wire Line
@@ -706,11 +685,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 4800 7900 4800
 Connection ~ 7500 3900
-Connection ~ 6700 5100
-Wire Wire Line
-	6700 5100 7100 5100
-Wire Wire Line
-	5600 5100 6700 5100
 $Comp
 L Device:R R36
 U 1 1 5E1B6C1C
@@ -1316,7 +1290,7 @@ $Comp
 L project:dip-switch-6x2pos-smd-1.27mm SW5
 U 4 1 5E8DA23F
 P 6350 5200
-F 0 "SW5" H 6350 5313 50  0000 C CNN
+F 0 "SW5" H 6350 5100 50  0000 C CNN
 F 1 "dip-switch-6x2pos-smd-1.27mm" H 6400 5100 50  0001 C CNN
 F 2 "Project:dip-switch-6x2pos-smd-1.27mm" H 6250 5480 50  0001 C CNN
 F 3 "~" H 6350 5200 50  0001 C CNN
@@ -1350,9 +1324,9 @@ Text Label 6750 4800 0    50   ~ 0
 Text Label 6750 4900 0    50   ~ 0
 SCLK
 Text Label 6750 5000 0    50   ~ 0
-MOSI
-Text Label 6750 5100 0    50   ~ 0
 MISO
+Text Label 6750 5100 0    50   ~ 0
+MOSI
 Text Label 6750 5200 0    50   ~ 0
 IRQ
 $Comp
@@ -1651,50 +1625,78 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0160
 U 1 1 5E7AE876
-P 5100 1350
-F 0 "#PWR0160" H 5100 1100 50  0001 C CNN
-F 1 "GND" H 5105 1177 50  0000 C CNN
-F 2 "" H 5100 1350 50  0001 C CNN
-F 3 "" H 5100 1350 50  0001 C CNN
-	1    5100 1350
+P 5150 1350
+F 0 "#PWR0160" H 5150 1100 50  0001 C CNN
+F 1 "GND" H 5155 1177 50  0000 C CNN
+F 2 "" H 5150 1350 50  0001 C CNN
+F 3 "" H 5150 1350 50  0001 C CNN
+	1    5150 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 1300 5100 1350
+	5150 1300 5150 1350
 $Comp
 L Device:LED D?
 U 1 1 5E7AE86E
-P 5100 1150
+P 5150 1150
 AR Path="/5E13857A/5E7AE86E" Ref="D?"  Part="1" 
 AR Path="/5E7AE86E" Ref="D12"  Part="1" 
-F 0 "D12" V 5138 1033 50  0000 R CNN
-F 1 "LED" V 5047 1033 50  0000 R CNN
-F 2 "LEDs:LED_0805_HandSoldering" H 5100 1150 50  0001 C CNN
-F 3 "~" H 5100 1150 50  0001 C CNN
-F 4 "green" V 4950 950 50  0000 C CNN "color"
-	1    5100 1150
+F 0 "D12" V 5188 1033 50  0000 R CNN
+F 1 "LED" V 5097 1033 50  0000 R CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 5150 1150 50  0001 C CNN
+F 3 "~" H 5150 1150 50  0001 C CNN
+F 4 "green" V 5000 950 50  0000 C CNN "color"
+	1    5150 1150
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R51
 U 1 1 5E7CD3EB
-P 4750 950
-F 0 "R51" V 4650 850 50  0000 C CNN
-F 1 "880R" V 4650 1050 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 4680 950 50  0001 C CNN
-F 3 "~" H 4750 950 50  0001 C CNN
-	1    4750 950 
+P 4800 950
+F 0 "R51" V 4700 850 50  0000 C CNN
+F 1 "880R" V 4700 1050 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 4730 950 50  0001 C CNN
+F 3 "~" H 4800 950 50  0001 C CNN
+	1    4800 950 
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4400 950  4600 950 
+	4400 950  4650 950 
 Wire Wire Line
-	4900 950  5100 950 
+	4950 950  5150 950 
 Connection ~ 4400 950 
 Wire Wire Line
 	4400 950  4400 850 
 Wire Wire Line
 	4400 950  4400 1100
 Wire Wire Line
-	5100 1000 5100 950 
+	5150 1000 5150 950 
+Text Label 4400 1850 1    50   ~ 0
+3V3PI
+Wire Wire Line
+	5600 5000 6700 5000
+Wire Wire Line
+	5600 4900 7300 4900
+Wire Wire Line
+	7200 5400 7200 5000
+Connection ~ 7200 5000
+Wire Wire Line
+	7200 5000 7900 5000
+Wire Wire Line
+	7300 5400 7300 4900
+Connection ~ 7300 4900
+Wire Wire Line
+	7300 4900 7900 4900
+Wire Wire Line
+	5600 5100 7100 5100
+Wire Wire Line
+	6700 5300 6700 5000
+Connection ~ 6700 5000
+Wire Wire Line
+	6700 5000 7200 5000
+Connection ~ 4400 1900
+Wire Wire Line
+	4400 1900 4450 1900
+Wire Wire Line
+	4450 1900 4450 2000
 $EndSCHEMATC
