@@ -28,6 +28,10 @@ D Quad-Operational Amplifiers, SOP-14
 K quad opamp
 $ENDCMP
 #
+$CMP PC817C
+D DC Optocoupler, 5kV
+$ENDCMP
+#
 $CMP Raspberry_RPI
 D Raspberry PI Adapter
 $ENDCMP

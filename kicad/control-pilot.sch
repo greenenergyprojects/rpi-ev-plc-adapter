@@ -407,12 +407,10 @@ Wire Wire Line
 Connection ~ 1600 2700
 Text HLabel 1400 2700 0    50   Input ~ 0
 PWM
-Text HLabel 6750 2700 2    50   Output ~ 0
+Text HLabel 6750 3000 2    50   Output ~ 0
 CP
 Text Label 3500 2600 0    50   ~ 0
-CP-PWM
-Wire Wire Line
-	5250 2100 5800 2100
+CP
 $Comp
 L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R22
 U 1 1 5E29E1DE
@@ -439,11 +437,6 @@ Wire Wire Line
 	5800 1450 5800 1550
 Wire Wire Line
 	6000 1450 6000 1550
-Wire Wire Line
-	5800 2100 5800 1850
-Connection ~ 5800 2100
-Wire Wire Line
-	5800 2100 6000 2100
 $Comp
 L project:LM224 U1
 U 1 1 5E2B28A7
@@ -602,11 +595,7 @@ Wire Wire Line
 	5400 5100 5500 5100
 Wire Wire Line
 	5500 5100 5500 5200
-Wire Wire Line
-	5250 2100 5250 2600
-Wire Wire Line
-	5250 2600 6750 2600
-Text HLabel 6750 2600 2    50   UnSpc ~ 0
+Text HLabel 6750 2900 2    50   UnSpc ~ 0
 PE
 Wire Wire Line
 	4400 1000 4400 2600
@@ -614,7 +603,7 @@ Wire Wire Line
 	3300 2600 4400 2600
 Connection ~ 4400 2600
 Wire Wire Line
-	4600 2200 4600 2600
+	4600 2100 4600 2600
 Wire Wire Line
 	4500 3300 4500 2600
 Connection ~ 4500 3700
@@ -630,12 +619,12 @@ Wire Wire Line
 Connection ~ 6150 4250
 Wire Wire Line
 	6150 4250 6300 4250
-Text HLabel 6750 2800 2    50   Output ~ 0
+Text HLabel 6750 3100 2    50   Output ~ 0
 VCP
 Wire Wire Line
-	6750 2800 6400 2800
+	6750 3100 6400 3100
 Wire Wire Line
-	6400 2800 6400 3800
+	6400 3100 6400 3800
 Connection ~ 6400 3800
 Wire Wire Line
 	6400 3800 7000 3800
@@ -1072,41 +1061,285 @@ Wire Wire Line
 	5300 1050 5800 1050
 NoConn ~ 5300 900 
 NoConn ~ 5300 1250
+Wire Wire Line
+	4600 2600 4600 3000
+Wire Wire Line
+	4600 3000 6750 3000
+Connection ~ 4600 2600
+Text HLabel 6750 2800 2    50   UnSpc ~ 0
+N
+Wire Wire Line
+	6400 2300 5950 2300
+Wire Wire Line
+	5950 2300 5950 2800
+Wire Wire Line
+	5950 2800 6750 2800
+Text Label 6225 2200 0    50   ~ 0
+PE
+Text Label 6225 2100 0    50   ~ 0
+CP
+Text Label 6225 2300 0    50   ~ 0
+N
 $Comp
-L Connector:Screw_Terminal_01x03 J6
-U 1 1 5E503A7C
-P 6400 2200
-F 0 "J6" H 6479 2196 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 6480 2151 50  0001 L CNN
-F 2 "Project:screw-terminal-230v-16a-5mm-3pin" H 6400 2200 50  0001 C CNN
-F 3 "~" H 6400 2200 50  0001 C CNN
-	1    6400 2200
+L Connector:Screw_Terminal_01x04 J6
+U 1 1 5E1DA4A7
+P 6600 2200
+F 0 "J6" H 6679 2146 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 6680 2101 50  0001 L CNN
+F 2 "Project:screw-terminal-230v-16a-5mm-4pin" H 6600 2200 50  0001 C CNN
+F 3 "~" H 6600 2200 50  0001 C CNN
+	1    6600 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 2600 4600 2700
+	6400 2400 6200 2400
+Text Label 6225 2400 0    50   ~ 0
+L
 Wire Wire Line
-	4600 2700 6750 2700
-Connection ~ 4600 2600
-Text HLabel 6750 2500 2    50   UnSpc ~ 0
+	4600 2100 6400 2100
+Wire Wire Line
+	6400 2200 6000 2200
+Wire Wire Line
+	5800 2200 5800 2900
+Wire Wire Line
+	5800 2900 6750 2900
+Wire Wire Line
+	5800 1850 5800 2200
+Connection ~ 5800 2200
+Wire Wire Line
+	6000 1850 6000 2200
+Connection ~ 6000 2200
+Wire Wire Line
+	6000 2200 5800 2200
+$Comp
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R55
+U 1 1 5E245DB5
+P 7700 1400
+F 0 "R55" H 7825 1425 50  0000 C CNN
+F 1 "820K" H 7875 1325 50  0000 C CNN
+F 2 "Project:r-1206-hand-soldering" V 7630 1400 50  0001 C CNN
+F 3 "" H 7700 1400 50  0001 C CNN
+	1    7700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D13
+U 1 1 5E2470CC
+P 7700 2100
+F 0 "D13" V 7625 1875 50  0000 L CNN
+F 1 "1N4007" V 7725 1750 50  0000 L CNN
+F 2 "Project:sma_hand-soldering" V 7700 2100 50  0001 C CNN
+F 3 "~" V 7700 2100 50  0001 C CNN
+F 4 "1000V/1A/SMA" V 7825 1450 50  0000 L CNN "type"
+	1    7700 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 2000 7700 1950
+Wire Wire Line
+	7700 1950 7900 1950
+Wire Wire Line
+	7900 1950 7900 2000
+Wire Wire Line
+	7900 2000 8000 2000
+Connection ~ 7700 1950
+Wire Wire Line
+	7700 1950 7700 1850
+Wire Wire Line
+	7700 2200 7700 2300
+Wire Wire Line
+	7700 2450 7300 2450
+Wire Wire Line
+	7700 1250 7700 1150
+Wire Wire Line
+	7700 1150 7300 1150
+Text Label 7400 1150 0    50   ~ 0
+L
+Text Label 7425 2450 0    50   ~ 0
 N
+$Comp
+L Device:C_Small C6
+U 1 1 5E264FBE
+P 7700 1750
+F 0 "C6" H 7792 1841 50  0000 L CNN
+F 1 "2.2n" H 7792 1750 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 7700 1750 50  0001 C CNN
+F 3 "~" H 7700 1750 50  0001 C CNN
+F 4 "1000V" H 7792 1659 50  0000 L CNN "type"
+	1    7700 1750
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6200 2300 5950 2300
+	8000 2200 7900 2200
 Wire Wire Line
-	5950 2300 5950 2500
+	7900 2200 7900 2300
 Wire Wire Line
-	5950 2500 6750 2500
+	7900 2300 7700 2300
+Connection ~ 7700 2300
 Wire Wire Line
-	4600 2200 6200 2200
+	7700 2300 7700 2450
+$Comp
+L Device:C_Small C8
+U 1 1 5E278396
+P 9250 1250
+F 0 "C8" H 9342 1296 50  0000 L CNN
+F 1 "1u" H 9342 1205 50  0000 L CNN
+F 2 "Project:c-1206-hand-soldering" H 9250 1250 50  0001 C CNN
+F 3 "~" H 9250 1250 50  0001 C CNN
+	1    9250 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R57
+U 1 1 5E2785CA
+P 9000 1500
+F 0 "R57" H 8875 1550 50  0000 C CNN
+F 1 "39K" H 8850 1450 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 8930 1500 50  0001 C CNN
+F 3 "" H 9000 1500 50  0001 C CNN
+	1    9000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E278752
+P 8550 1000
+AR Path="/5E278752" Ref="#PWR?"  Part="1" 
+AR Path="/5E13857A/5E278752" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 8550 850 50  0001 C CNN
+F 1 "+3V3" H 8565 1173 50  0000 C CNN
+F 2 "" H 8550 1000 50  0001 C CNN
+F 3 "" H 8550 1000 50  0001 C CNN
+	1    8550 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5E285632
+P 9000 2100
+F 0 "C7" H 9092 2146 50  0000 L CNN
+F 1 "220n" H 9092 2055 50  0000 L CNN
+F 2 "Project:c-1206-hand-soldering" H 9000 2100 50  0001 C CNN
+F 3 "~" H 9000 2100 50  0001 C CNN
+	1    9000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5E2857D6
+P 9500 1850
+F 0 "C9" V 9400 1750 50  0000 C CNN
+F 1 "1n" V 9375 1925 50  0000 C CNN
+F 2 "Project:c-1206-hand-soldering" H 9500 1850 50  0001 C CNN
+F 3 "~" H 9500 1850 50  0001 C CNN
+	1    9500 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E285ADF
+P 9000 2300
+F 0 "#PWR0103" H 9000 2050 50  0001 C CNN
+F 1 "GND" H 9000 2150 50  0000 C CNN
+F 2 "" H 9000 2300 50  0001 C CNN
+F 3 "" H 9000 2300 50  0001 C CNN
+	1    9000 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R56
+U 1 1 5E29973A
+P 8800 1100
+F 0 "R56" V 8880 1100 50  0000 C CNN
+F 1 "100R" V 8700 1100 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 8730 1100 50  0001 C CNN
+F 3 "" H 8800 1100 50  0001 C CNN
+	1    8800 1100
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	6000 1850 6000 2100
-Connection ~ 6000 2100
+	8550 1000 8550 1100
 Wire Wire Line
-	6000 2100 6200 2100
-Text Label 6050 2100 0    50   ~ 0
-PE
-Text Label 6050 2200 0    50   ~ 0
-CP
-Text Label 6050 2300 0    50   ~ 0
-N
+	8550 1100 8650 1100
+Wire Wire Line
+	8950 1100 9000 1100
+Wire Wire Line
+	9000 1100 9000 1350
+Wire Wire Line
+	9000 1100 9250 1100
+Wire Wire Line
+	9250 1100 9250 1150
+Connection ~ 9000 1100
+$Comp
+L power:GND #PWR0152
+U 1 1 5E2B4A3B
+P 9250 1450
+F 0 "#PWR0152" H 9250 1200 50  0001 C CNN
+F 1 "GND" H 9250 1300 50  0000 C CNN
+F 2 "" H 9250 1450 50  0001 C CNN
+F 3 "" H 9250 1450 50  0001 C CNN
+	1    9250 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 1450 9250 1350
+Wire Wire Line
+	8600 2000 8700 2000
+Wire Wire Line
+	8700 2000 8700 1950
+Wire Wire Line
+	8700 1950 9000 1950
+Wire Wire Line
+	9000 1950 9000 1850
+Wire Wire Line
+	9000 1950 9000 2000
+Connection ~ 9000 1950
+Wire Wire Line
+	8600 2200 8700 2200
+Wire Wire Line
+	8700 2200 8700 2250
+Wire Wire Line
+	8700 2250 9000 2250
+Wire Wire Line
+	9000 2250 9000 2200
+Wire Wire Line
+	9000 2250 9000 2300
+Connection ~ 9000 2250
+Wire Wire Line
+	9000 1850 9400 1850
+Connection ~ 9000 1850
+Wire Wire Line
+	9000 1850 9000 1650
+Text HLabel 10125 1850 2    50   Output ~ 0
+ZERODET
+$Comp
+L project:PC817C U2
+U 1 1 5E30A0C9
+P 8300 2100
+F 0 "U2" H 8125 2300 50  0000 C CNN
+F 1 "PC817C" H 8425 2300 50  0000 C CNN
+F 2 "Project:sop-4-pc817" H 8100 1900 50  0001 L CIN
+F 3 "" H 8300 2100 50  0001 L CNN
+	1    8300 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 1650 7700 1550
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5E34FA13
+P 9800 1850
+AR Path="/5E34FA13" Ref="JP?"  Part="1" 
+AR Path="/5E13857A/5E34FA13" Ref="JP3"  Part="1" 
+F 0 "JP3" H 9750 1800 50  0000 L CNN
+F 1 "Jumper_NO_Small" V 9845 1898 50  0001 L CNN
+F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 9800 1850 50  0001 C CNN
+F 3 "~" H 9800 1850 50  0001 C CNN
+	1    9800 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1850 9700 1850
+Wire Wire Line
+	9900 1850 10125 1850
 $EndSCHEMATC
