@@ -673,7 +673,7 @@ L-A
 Text Label 10700 3300 0    50   ~ 0
 L-B
 $Comp
-L Device:R R?
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R?
 U 1 1 5E2A00E2
 P 10750 5550
 AR Path="/5E13857A/5E2A00E2" Ref="R?"  Part="1" 
@@ -719,7 +719,7 @@ $EndComp
 Wire Wire Line
 	10750 6100 10750 6200
 $Comp
-L Device:R R?
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R?
 U 1 1 5E2C2D62
 P 10300 5550
 AR Path="/5E13857A/5E2C2D62" Ref="R?"  Part="1" 
@@ -960,7 +960,7 @@ Connection ~ 3250 2500
 Wire Wire Line
 	3250 2500 3350 2500
 $Comp
-L Device:R R?
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R?
 U 1 1 5E85A611
 P 2500 5350
 AR Path="/5E13857A/5E85A611" Ref="R?"  Part="1" 
@@ -1004,7 +1004,7 @@ Wire Wire Line
 Wire Wire Line
 	2500 5200 2500 4800
 $Comp
-L Device:R R?
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R?
 U 1 1 5E866216
 P 2900 5350
 AR Path="/5E13857A/5E866216" Ref="R?"  Part="1" 
@@ -1048,7 +1048,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 5200 2900 4900
 $Comp
-L Device:R R?
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R?
 U 1 1 5E8724DA
 P 3300 5350
 AR Path="/5E13857A/5E8724DA" Ref="R?"  Part="1" 

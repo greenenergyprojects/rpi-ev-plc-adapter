@@ -1,0 +1,68 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AO3400
+D n-mosfet, 30V, 3A
+$ENDCMP
+#
+$CMP AO3401
+D PMOS -30V/-3A, UGS -1.5V
+K transistor PMOS P-MOS P-MOSFET
+F ~
+$ENDCMP
+#
+$CMP B5819WS
+D Schottky Diode 40V, 1A
+$ENDCMP
+#
+$CMP BAT54S
+D schottky barrier diode
+K schottky diode
+$ENDCMP
+#
+$CMP I2PLCAMN-ISE-002-T
+D Powline Communication Modem for Electro Vehicle
+$ENDCMP
+#
+$CMP LM224
+D Quad-Operational Amplifiers, SOP-14
+K quad opamp
+$ENDCMP
+#
+$CMP PC817C
+D DC Optocoupler, 5kV
+$ENDCMP
+#
+$CMP Raspberry_RPI
+D Raspberry PI Adapter
+$ENDCMP
+#
+$CMP SS-12D00G3
+D Switch, single pole double throw
+$ENDCMP
+#
+$CMP dip-switch-4x2pos-smd-1.27mm
+D DIP switch 4x 2 Positions
+K jswitch
+F ~
+$ENDCMP
+#
+$CMP dip-switch-6x2pos-smd-1.27mm
+D DIP switch 6x 2 Positions
+K switch
+F ~
+$ENDCMP
+#
+$CMP push-button_ebay-183284526496
+D Push button switch, 4.54.5mm, SMD, ebay 183284526496
+K switch normally-open pushbutton push-button
+$ENDCMP
+#
+$CMP supply-5Vto3V3_ebay-303262143289
+D Power Supply Module VIN 3.7V-5V, VOUT1 +3.3V (500mA)
+$ENDCMP
+#
+$CMP supply-5VtoPM12V_ebay-253052736386
+D 5V to +12V and -12V, ebay-253052736386
+$ENDCMP
+#
+#End Doc Library

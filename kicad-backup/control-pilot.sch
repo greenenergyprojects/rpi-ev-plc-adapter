@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R R15
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R15
 U 1 1 5AB4B011
 P 4500 3450
 F 0 "R15" H 4350 3500 50  0000 C CNN
@@ -26,7 +26,7 @@ F 3 "" H 4500 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R16
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R16
 U 1 1 5AB4B086
 P 4500 4050
 F 0 "R16" H 4350 4150 50  0000 C CNN
@@ -48,7 +48,7 @@ F 3 "" H 4500 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C5
+L rpi-ev-plc-adapter-rescue:C-ev-charger-met16-rescue C5
 U 1 1 5AB4B858
 P 6000 4050
 AR Path="/5AB4B858" Ref="C5"  Part="1" 
@@ -61,7 +61,7 @@ F 3 "" H 6000 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:B5819WS D2
+L rpi-ev-plc-adapter-rescue:D_Schottky-ev-charger-met16-rescue D2
 U 1 1 5AB4A9B7
 P 5600 3800
 F 0 "D2" H 5600 3700 50  0000 C CNN
@@ -72,7 +72,7 @@ F 3 "" H 5600 3800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R19
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R19
 U 1 1 5AB4C124
 P 6300 4050
 F 0 "R19" H 6425 4125 50  0000 C CNN
@@ -85,7 +85,7 @@ $EndComp
 Text Notes 4550 700  0    39   ~ 0
 Simulate car
 $Comp
-L Device:R R17
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R17
 U 1 1 5AE42C8F
 P 5800 1300
 F 0 "R17" H 5650 1350 50  0000 C CNN
@@ -96,7 +96,7 @@ F 3 "" H 5800 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R18
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R18
 U 1 1 5AE42DED
 P 6000 1300
 F 0 "R18" H 6150 1350 50  0000 C CNN
@@ -107,7 +107,7 @@ F 3 "" H 6000 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:B5819WS D1
+L rpi-ev-plc-adapter-rescue:D_Schottky-ev-charger-met16-rescue D1
 U 1 1 5AE44F46
 P 4650 1000
 F 0 "D1" H 4650 900 50  0000 C CNN
@@ -211,7 +211,7 @@ F 3 "" H 3300 3800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R20
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R20
 U 1 1 5E207D03
 P 3300 2250
 F 0 "R20" H 3425 2300 50  0000 C CNN
@@ -222,7 +222,7 @@ F 3 "" H 3300 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R21
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R21
 U 1 1 5E207ED7
 P 3300 2950
 F 0 "R21" H 3425 3000 50  0000 C CNN
@@ -233,7 +233,7 @@ F 3 "" H 3300 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R13
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R13
 U 1 1 5E208145
 P 3050 1450
 F 0 "R13" V 3150 1550 50  0000 C CNN
@@ -244,7 +244,7 @@ F 3 "" H 3050 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R14
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R14
 U 1 1 5E20831F
 P 3050 3700
 F 0 "R14" V 3150 3800 50  0000 C CNN
@@ -296,7 +296,7 @@ F 3 "" V 1900 2050 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R10
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R10
 U 1 1 5E2168AF
 P 2550 1750
 F 0 "R10" V 2625 1825 50  0000 C CNN
@@ -356,7 +356,7 @@ $EndComp
 Wire Wire Line
 	2800 2950 2800 2900
 $Comp
-L Device:R R11
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R11
 U 1 1 5E229C3D
 P 2550 2400
 F 0 "R11" V 2625 2475 50  0000 C CNN
@@ -387,7 +387,7 @@ Wire Wire Line
 Wire Wire Line
 	1600 2050 1700 2050
 $Comp
-L Device:R R12
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R12
 U 1 1 5E2522B7
 P 2800 3100
 F 0 "R12" H 2675 3150 50  0000 C CNN
@@ -412,7 +412,7 @@ CP
 Text Label 3500 2600 0    50   ~ 0
 CP
 $Comp
-L Device:R R22
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R22
 U 1 1 5E29E1DE
 P 5800 1700
 F 0 "R22" H 5675 1750 50  0000 C CNN
@@ -423,7 +423,7 @@ F 3 "" H 5800 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R23
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R23
 U 1 1 5E29E22A
 P 6000 1700
 F 0 "R23" H 6125 1750 50  0000 C CNN
@@ -653,7 +653,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 3800 7000 4500
 $Comp
-L Device:R R26
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R26
 U 1 1 5E104ECB
 P 8050 4700
 F 0 "R26" V 8130 4700 50  0000 C CNN
@@ -664,7 +664,7 @@ F 3 "" H 8050 4700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R30
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R30
 U 1 1 5E105011
 P 8650 5400
 F 0 "R30" V 8730 5400 50  0000 C CNN
@@ -675,7 +675,7 @@ F 3 "" H 8650 5400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R24
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R24
 U 1 1 5E1050C0
 P 7450 4000
 F 0 "R24" V 7530 4000 50  0000 C CNN
@@ -686,7 +686,7 @@ F 3 "" H 7450 4000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R27
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R27
 U 1 1 5E10A656
 P 8150 4200
 F 0 "R27" V 8230 4200 50  0000 C CNN
@@ -697,7 +697,7 @@ F 3 "" H 8150 4200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R31
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R31
 U 1 1 5E10A6E2
 P 8750 4900
 F 0 "R31" V 8830 4900 50  0000 C CNN
@@ -708,7 +708,7 @@ F 3 "" H 8750 4900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R34
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R34
 U 1 1 5E10A78A
 P 9400 5600
 F 0 "R34" V 9480 5600 50  0000 C CNN
@@ -719,7 +719,7 @@ F 3 "" H 9400 5600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R25
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R25
 U 1 1 5E10FD6C
 P 7700 5850
 F 0 "R25" H 7550 5900 50  0000 C CNN
@@ -730,7 +730,7 @@ F 3 "" H 7700 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R28
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R28
 U 1 1 5E10FE52
 P 8300 5850
 F 0 "R28" H 8150 5900 50  0000 C CNN
@@ -741,7 +741,7 @@ F 3 "" H 8300 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R32
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R32
 U 1 1 5E10FF0C
 P 8900 5850
 F 0 "R32" H 8750 5900 50  0000 C CNN
@@ -865,7 +865,7 @@ Connection ~ 8900 5600
 Wire Wire Line
 	8900 5600 8900 5400
 $Comp
-L Device:R R29
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R29
 U 1 1 5E15A44D
 P 8600 3050
 F 0 "R29" H 8475 3100 50  0000 C CNN
@@ -905,7 +905,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 2900 8600 2800
 $Comp
-L Device:R R33
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R33
 U 1 1 5E16B5C8
 P 9200 3050
 F 0 "R33" H 9075 3100 50  0000 C CNN
@@ -945,7 +945,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 2900 9200 2800
 $Comp
-L Device:R R35
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R35
 U 1 1 5E16FA1F
 P 9800 3050
 F 0 "R35" H 9675 3100 50  0000 C CNN
@@ -1112,7 +1112,7 @@ Connection ~ 6000 2200
 Wire Wire Line
 	6000 2200 5800 2200
 $Comp
-L Device:R R55
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R55
 U 1 1 5E245DB5
 P 7700 1400
 F 0 "R55" H 7825 1425 50  0000 C CNN
@@ -1190,7 +1190,7 @@ F 3 "~" H 9250 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R57
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R57
 U 1 1 5E2785CA
 P 9000 1500
 F 0 "R57" H 8875 1550 50  0000 C CNN
@@ -1247,7 +1247,7 @@ F 3 "" H 9000 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R56
+L rpi-ev-plc-adapter-rescue:R-ev-charger-met16-rescue R56
 U 1 1 5E29973A
 P 8800 1100
 F 0 "R56" V 8880 1100 50  0000 C CNN

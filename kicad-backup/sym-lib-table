@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name project)(type Legacy)(uri ${KIPRJMOD}/project.lib)(options "")(descr ""))
+  (lib (name rpi-ev-plc-adapter-rescue)(type Legacy)(uri ${KIPRJMOD}/rpi-ev-plc-adapter-rescue.lib)(options "")(descr ""))
+)

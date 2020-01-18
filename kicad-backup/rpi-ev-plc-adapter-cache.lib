@@ -169,24 +169,6 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_C
-#
-DEF Device_C C 0 10 N Y 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "Device_C" 25 -100 50 H V L CNN
-F2 "" 38 -150 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
-DRAW
-P 2 0 1 20 -80 -30 80 -30 N
-P 2 0 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_C_Small
 #
 DEF Device_C_Small C 0 10 N N 1 F N
@@ -434,25 +416,6 @@ P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
 X G 1 -200 0 200 R 50 50 1 1 I
 X S 2 100 200 100 D 50 50 1 1 P
 X D 3 100 -200 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# project_B5819WS
-#
-DEF project_B5819WS D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "project_B5819WS" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- *SOD23*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
-P 6 0 1 8 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -730,6 +693,65 @@ X +5V(in) 2 0 200 150 R 40 40 1 1 W
 X +12V(out) 3 1000 200 150 L 40 40 1 1 w
 X GND(out) 4 1000 0 150 L 40 40 1 1 W
 X -12V(out) 5 1000 100 150 L 40 40 1 1 w
+ENDDRAW
+ENDDEF
+#
+# rpi-ev-plc-adapter-rescue_C-ev-charger-met16-rescue
+#
+DEF rpi-ev-plc-adapter-rescue_C-ev-charger-met16-rescue C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "rpi-ev-plc-adapter-rescue_C-ev-charger-met16-rescue" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# rpi-ev-plc-adapter-rescue_D_Schottky-ev-charger-met16-rescue
+#
+DEF rpi-ev-plc-adapter-rescue_D_Schottky-ev-charger-met16-rescue D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "rpi-ev-plc-adapter-rescue_D_Schottky-ev-charger-met16-rescue" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *SingleDiode
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 8 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# rpi-ev-plc-adapter-rescue_R-ev-charger-met16-rescue
+#
+DEF rpi-ev-plc-adapter-rescue_R-ev-charger-met16-rescue R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "rpi-ev-plc-adapter-rescue_R-ev-charger-met16-rescue" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
