@@ -20,7 +20,7 @@ U 1 1 5AB4B011
 P 4500 3450
 F 0 "R15" H 4350 3500 50  0000 C CNN
 F 1 "100k" H 4350 3400 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 4430 3450 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 4430 3450 50  0001 C CNN
 F 3 "" H 4500 3450 50  0001 C CNN
 	1    4500 3450
 	1    0    0    -1  
@@ -31,7 +31,7 @@ U 1 1 5AB4B086
 P 4500 4050
 F 0 "R16" H 4350 4150 50  0000 C CNN
 F 1 "22k" H 4350 4050 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 4430 4050 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 4430 4050 50  0001 C CNN
 F 3 "" H 4500 4050 50  0001 C CNN
 	1    4500 4050
 	1    0    0    -1  
@@ -77,7 +77,7 @@ U 1 1 5AB4C124
 P 6300 4050
 F 0 "R19" H 6425 4125 50  0000 C CNN
 F 1 "1G" H 6400 4025 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 6230 4050 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 6230 4050 50  0001 C CNN
 F 3 "" H 6300 4050 50  0001 C CNN
 	1    6300 4050
 	1    0    0    -1  
@@ -90,7 +90,7 @@ U 1 1 5AE42C8F
 P 5800 1300
 F 0 "R17" H 5650 1350 50  0000 C CNN
 F 1 "2.74k" H 5650 1250 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 5730 1300 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 5730 1300 50  0001 C CNN
 F 3 "" H 5800 1300 50  0001 C CNN
 	1    5800 1300
 	1    0    0    -1  
@@ -101,7 +101,7 @@ U 1 1 5AE42DED
 P 6000 1300
 F 0 "R18" H 6150 1350 50  0000 C CNN
 F 1 "1.3k" H 6150 1250 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 5930 1300 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 5930 1300 50  0001 C CNN
 F 3 "" H 6000 1300 50  0001 C CNN
 	1    6000 1300
 	1    0    0    -1  
@@ -216,7 +216,7 @@ U 1 1 5E207D03
 P 3300 2250
 F 0 "R20" H 3425 2300 50  0000 C CNN
 F 1 "1k" H 3400 2225 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 3230 2250 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 3230 2250 50  0001 C CNN
 F 3 "" H 3300 2250 50  0001 C CNN
 	1    3300 2250
 	1    0    0    -1  
@@ -227,7 +227,7 @@ U 1 1 5E207ED7
 P 3300 2950
 F 0 "R21" H 3425 3000 50  0000 C CNN
 F 1 "1k" H 3400 2900 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 3230 2950 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 3230 2950 50  0001 C CNN
 F 3 "" H 3300 2950 50  0001 C CNN
 	1    3300 2950
 	1    0    0    -1  
@@ -238,7 +238,7 @@ U 1 1 5E208145
 P 3050 1450
 F 0 "R13" V 3150 1550 50  0000 C CNN
 F 1 "10K" V 3150 1375 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 2980 1450 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 2980 1450 50  0001 C CNN
 F 3 "" H 3050 1450 50  0001 C CNN
 	1    3050 1450
 	0    -1   -1   0   
@@ -249,7 +249,7 @@ U 1 1 5E20831F
 P 3050 3700
 F 0 "R14" V 3150 3800 50  0000 C CNN
 F 1 "10K" V 3150 3625 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 2980 3700 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 2980 3700 50  0001 C CNN
 F 3 "" H 3050 3700 50  0001 C CNN
 	1    3050 3700
 	0    -1   -1   0   
@@ -301,7 +301,7 @@ U 1 1 5E2168AF
 P 2550 1750
 F 0 "R10" V 2625 1825 50  0000 C CNN
 F 1 "10K" V 2625 1650 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 2480 1750 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 2480 1750 50  0001 C CNN
 F 3 "" H 2550 1750 50  0001 C CNN
 	1    2550 1750
 	0    -1   -1   0   
@@ -361,7 +361,7 @@ U 1 1 5E229C3D
 P 2550 2400
 F 0 "R11" V 2625 2475 50  0000 C CNN
 F 1 "33K" V 2625 2275 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 2480 2400 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 2480 2400 50  0001 C CNN
 F 3 "" H 2550 2400 50  0001 C CNN
 	1    2550 2400
 	0    -1   -1   0   
@@ -392,7 +392,7 @@ U 1 1 5E2522B7
 P 2800 3100
 F 0 "R12" H 2675 3150 50  0000 C CNN
 F 1 "18K" H 2675 3050 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 2730 3100 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 2730 3100 50  0001 C CNN
 F 3 "" H 2800 3100 50  0001 C CNN
 	1    2800 3100
 	1    0    0    -1  
@@ -417,7 +417,7 @@ U 1 1 5E29E1DE
 P 5800 1700
 F 0 "R22" H 5675 1750 50  0000 C CNN
 F 1 "0R" H 5700 1650 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 5730 1700 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 5730 1700 50  0001 C CNN
 F 3 "" H 5800 1700 50  0001 C CNN
 	1    5800 1700
 	1    0    0    -1  
@@ -428,7 +428,7 @@ U 1 1 5E29E22A
 P 6000 1700
 F 0 "R23" H 6125 1750 50  0000 C CNN
 F 1 "0R" H 6100 1650 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 5930 1700 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 5930 1700 50  0001 C CNN
 F 3 "" H 6000 1700 50  0001 C CNN
 	1    6000 1700
 	1    0    0    -1  
@@ -658,7 +658,7 @@ U 1 1 5E104ECB
 P 8050 4700
 F 0 "R26" V 8130 4700 50  0000 C CNN
 F 1 "5K6" V 7950 4700 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 7980 4700 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 7980 4700 50  0001 C CNN
 F 3 "" H 8050 4700 50  0001 C CNN
 	1    8050 4700
 	0    -1   -1   0   
@@ -669,7 +669,7 @@ U 1 1 5E105011
 P 8650 5400
 F 0 "R30" V 8730 5400 50  0000 C CNN
 F 1 "10K" V 8550 5400 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 8580 5400 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 8580 5400 50  0001 C CNN
 F 3 "" H 8650 5400 50  0001 C CNN
 	1    8650 5400
 	0    -1   -1   0   
@@ -680,7 +680,7 @@ U 1 1 5E1050C0
 P 7450 4000
 F 0 "R24" V 7530 4000 50  0000 C CNN
 F 1 "5K6" V 7350 4000 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 7380 4000 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 7380 4000 50  0001 C CNN
 F 3 "" H 7450 4000 50  0001 C CNN
 	1    7450 4000
 	0    -1   -1   0   
@@ -691,7 +691,7 @@ U 1 1 5E10A656
 P 8150 4200
 F 0 "R27" V 8230 4200 50  0000 C CNN
 F 1 "330K" V 8050 4200 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 8080 4200 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 8080 4200 50  0001 C CNN
 F 3 "" H 8150 4200 50  0001 C CNN
 	1    8150 4200
 	0    -1   -1   0   
@@ -702,7 +702,7 @@ U 1 1 5E10A6E2
 P 8750 4900
 F 0 "R31" V 8830 4900 50  0000 C CNN
 F 1 "100K" V 8650 4900 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 8680 4900 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 8680 4900 50  0001 C CNN
 F 3 "" H 8750 4900 50  0001 C CNN
 	1    8750 4900
 	0    -1   -1   0   
@@ -713,7 +713,7 @@ U 1 1 5E10A78A
 P 9400 5600
 F 0 "R34" V 9480 5600 50  0000 C CNN
 F 1 "82K" V 9300 5600 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 9330 5600 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 9330 5600 50  0001 C CNN
 F 3 "" H 9400 5600 50  0001 C CNN
 	1    9400 5600
 	0    -1   -1   0   
@@ -724,7 +724,7 @@ U 1 1 5E10FD6C
 P 7700 5850
 F 0 "R25" H 7550 5900 50  0000 C CNN
 F 1 "8K2" H 7550 5800 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 7630 5850 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 7630 5850 50  0001 C CNN
 F 3 "" H 7700 5850 50  0001 C CNN
 	1    7700 5850
 	1    0    0    -1  
@@ -735,7 +735,7 @@ U 1 1 5E10FE52
 P 8300 5850
 F 0 "R28" H 8150 5900 50  0000 C CNN
 F 1 "3K9" H 8150 5800 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 8230 5850 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 8230 5850 50  0001 C CNN
 F 3 "" H 8300 5850 50  0001 C CNN
 	1    8300 5850
 	1    0    0    -1  
@@ -746,7 +746,7 @@ U 1 1 5E10FF0C
 P 8900 5850
 F 0 "R32" H 8750 5900 50  0000 C CNN
 F 1 "2K2" H 8750 5800 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 8830 5850 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 8830 5850 50  0001 C CNN
 F 3 "" H 8900 5850 50  0001 C CNN
 	1    8900 5850
 	1    0    0    -1  
@@ -870,7 +870,7 @@ U 1 1 5E15A44D
 P 8600 3050
 F 0 "R29" H 8475 3100 50  0000 C CNN
 F 1 "880R" H 8450 3000 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 8530 3050 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 8530 3050 50  0001 C CNN
 F 3 "" H 8600 3050 50  0001 C CNN
 	1    8600 3050
 	1    0    0    -1  
@@ -910,7 +910,7 @@ U 1 1 5E16B5C8
 P 9200 3050
 F 0 "R33" H 9075 3100 50  0000 C CNN
 F 1 "220R" H 9050 3000 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 9130 3050 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 9130 3050 50  0001 C CNN
 F 3 "" H 9200 3050 50  0001 C CNN
 	1    9200 3050
 	1    0    0    -1  
@@ -950,7 +950,7 @@ U 1 1 5E16FA1F
 P 9800 3050
 F 0 "R35" H 9675 3100 50  0000 C CNN
 F 1 "1K2" H 9675 3000 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 9730 3050 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 9730 3050 50  0001 C CNN
 F 3 "" H 9800 3050 50  0001 C CNN
 	1    9800 3050
 	1    0    0    -1  
@@ -1195,7 +1195,7 @@ U 1 1 5E2785CA
 P 9000 1500
 F 0 "R57" H 8875 1550 50  0000 C CNN
 F 1 "39K" H 8850 1450 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 8930 1500 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 8930 1500 50  0001 C CNN
 F 3 "" H 9000 1500 50  0001 C CNN
 	1    9000 1500
 	1    0    0    -1  
@@ -1252,7 +1252,7 @@ U 1 1 5E29973A
 P 8800 1100
 F 0 "R56" V 8880 1100 50  0000 C CNN
 F 1 "100R" V 8700 1100 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 8730 1100 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 8730 1100 50  0001 C CNN
 F 3 "" H 8800 1100 50  0001 C CNN
 	1    8800 1100
 	0    -1   -1   0   
