@@ -5,11 +5,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "RPI-EV-PLC Adapter"
+Date "2020-02-14"
+Rev "V1.0"
+Comp "(C) Manfred Steiner"
+Comment1 "https://github.com/greenenergyprojects/rpi-ev-plc-adapter"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -50,12 +50,12 @@ $EndComp
 $Comp
 L power:+5V #PWR0104
 U 1 1 5E04B2E6
-P 5750 950
-F 0 "#PWR0104" H 5750 800 50  0001 C CNN
-F 1 "+5V" H 5765 1123 50  0000 C CNN
-F 2 "" H 5750 950 50  0001 C CNN
-F 3 "" H 5750 950 50  0001 C CNN
-	1    5750 950 
+P 5750 700
+F 0 "#PWR0104" H 5750 550 50  0001 C CNN
+F 1 "+5V" H 5765 873 50  0000 C CNN
+F 2 "" H 5750 700 50  0001 C CNN
+F 3 "" H 5750 700 50  0001 C CNN
+	1    5750 700 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -76,7 +76,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 1050 5750 1050
 Wire Wire Line
-	5750 1050 5750 950 
+	5750 1050 5750 750 
 $Comp
 L power:GND #PWR0106
 U 1 1 5E04B396
@@ -121,12 +121,12 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0109
 U 1 1 5E04B9EF
-P 4900 1750
-F 0 "#PWR0109" H 4900 1600 50  0001 C CNN
-F 1 "+5V" H 4915 1923 50  0000 C CNN
-F 2 "" H 4900 1750 50  0001 C CNN
-F 3 "" H 4900 1750 50  0001 C CNN
-	1    4900 1750
+P 4900 1825
+F 0 "#PWR0109" H 4900 1675 50  0001 C CNN
+F 1 "+5V" H 4915 1998 50  0000 C CNN
+F 2 "" H 4900 1825 50  0001 C CNN
+F 3 "" H 4900 1825 50  0001 C CNN
+	1    4900 1825
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -136,7 +136,7 @@ Wire Wire Line
 Wire Wire Line
 	4950 1900 4950 2000
 Wire Wire Line
-	4900 1900 4900 1750
+	4900 1900 4900 1825
 Connection ~ 4900 1900
 Wire Wire Line
 	4900 1900 4950 1900
@@ -1262,49 +1262,45 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0160
 U 1 1 5E7AE876
-P 5150 1350
-F 0 "#PWR0160" H 5150 1100 50  0001 C CNN
-F 1 "GND" H 5155 1177 50  0000 C CNN
-F 2 "" H 5150 1350 50  0001 C CNN
-F 3 "" H 5150 1350 50  0001 C CNN
-	1    5150 1350
+P 3850 1350
+F 0 "#PWR0160" H 3850 1100 50  0001 C CNN
+F 1 "GND" H 3855 1177 50  0000 C CNN
+F 2 "" H 3850 1350 50  0001 C CNN
+F 3 "" H 3850 1350 50  0001 C CNN
+	1    3850 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 1300 5150 1350
+	3850 1300 3850 1350
 $Comp
 L Device:LED D?
 U 1 1 5E7AE86E
-P 5150 1150
+P 3850 1150
 AR Path="/5E13857A/5E7AE86E" Ref="D?"  Part="1" 
 AR Path="/5E7AE86E" Ref="D12"  Part="1" 
-F 0 "D12" V 5188 1033 50  0000 R CNN
-F 1 "LED" V 5097 1033 50  0000 R CNN
-F 2 "LEDs:LED_0805_HandSoldering" H 5150 1150 50  0001 C CNN
-F 3 "~" H 5150 1150 50  0001 C CNN
-F 4 "green" V 5000 950 50  0000 C CNN "color"
-	1    5150 1150
+F 0 "D12" V 3888 1033 50  0000 R CNN
+F 1 "LED" V 3797 1033 50  0000 R CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 3850 1150 50  0001 C CNN
+F 3 "~" H 3850 1150 50  0001 C CNN
+F 4 "green" V 3700 950 50  0000 C CNN "color"
+	1    3850 1150
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R51
 U 1 1 5E7CD3EB
-P 4800 950
-F 0 "R51" V 4700 850 50  0000 C CNN
-F 1 "880R" V 4700 1050 50  0000 C CNN
-F 2 "Project:r-1206-hand-soldering" V 4730 950 50  0001 C CNN
-F 3 "~" H 4800 950 50  0001 C CNN
-	1    4800 950 
-	0    1    1    0   
+P 4150 950
+F 0 "R51" V 4050 1050 50  0000 C CNN
+F 1 "880R" V 4050 850 50  0000 C CNN
+F 2 "Project:r-1206-hand-soldering" V 4080 950 50  0001 C CNN
+F 3 "~" H 4150 950 50  0001 C CNN
+	1    4150 950 
+	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	4400 950  4650 950 
-Wire Wire Line
-	4950 950  5150 950 
 Wire Wire Line
 	4400 950  4400 850 
 Wire Wire Line
-	5150 1000 5150 950 
+	3850 1000 3850 950 
 Wire Wire Line
 	5600 5000 6700 5000
 Wire Wire Line
@@ -1556,7 +1552,7 @@ M+12V
 Text Label 6875 1150 0    50   ~ 0
 M-12V
 Wire Wire Line
-	4400 950  4400 1900
+	4400 950  4400 1100
 Wire Wire Line
 	1900 3000 1700 3000
 Wire Wire Line
@@ -1746,4 +1742,62 @@ Wire Wire Line
 Wire Wire Line
 	7725 4600 7725 4500
 Connection ~ 7725 4500
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5E481FEB
+P 5200 850
+F 0 "J7" H 5225 650 50  0000 C CNN
+F 1 "header" H 5225 950 50  0000 C CNN
+F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 5200 850 50  0001 C CNN
+F 3 "~" H 5200 850 50  0001 C CNN
+	1    5200 850 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 950  3850 950 
+Wire Wire Line
+	4400 950  4300 950 
+Wire Wire Line
+	5750 750  5400 750 
+Connection ~ 5750 750 
+Wire Wire Line
+	5750 750  5750 700 
+Wire Wire Line
+	5400 850  5500 850 
+Wire Wire Line
+	5500 850  5500 1250
+Wire Wire Line
+	5500 1250 5750 1250
+Connection ~ 5750 1250
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 5E55E445
+P 4800 1200
+F 0 "J8" H 4825 1000 50  0000 C CNN
+F 1 "header" H 4825 1300 50  0000 C CNN
+F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 4800 1200 50  0001 C CNN
+F 3 "~" H 4800 1200 50  0001 C CNN
+	1    4800 1200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4600 1100 4400 1100
+Connection ~ 4400 1100
+Wire Wire Line
+	4400 1100 4400 1900
+$Comp
+L power:GND #PWR0145
+U 1 1 5E581ACC
+P 4550 1300
+F 0 "#PWR0145" H 4550 1050 50  0001 C CNN
+F 1 "GND" H 4555 1127 50  0000 C CNN
+F 2 "" H 4550 1300 50  0001 C CNN
+F 3 "" H 4550 1300 50  0001 C CNN
+	1    4550 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1300 4550 1200
+Wire Wire Line
+	4550 1200 4600 1200
 $EndSCHEMATC

@@ -5,11 +5,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "RPI-EV-PLC Adapter"
+Date "2020-02-14"
+Rev "V1.0"
+Comp "(C) Manfred Steiner"
+Comment1 "https://github.com/greenenergyprojects/rpi-ev-plc-adapter"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -1190,10 +1190,10 @@ F 3 "~" H 9250 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R57
+L Device:R R49
 U 1 1 5E2785CA
 P 9000 1500
-F 0 "R57" H 8875 1550 50  0000 C CNN
+F 0 "R49" H 8875 1550 50  0000 C CNN
 F 1 "39K" H 8850 1450 50  0000 C CNN
 F 2 "Project:r-1206-hand-soldering" V 8930 1500 50  0001 C CNN
 F 3 "" H 9000 1500 50  0001 C CNN
@@ -1247,10 +1247,10 @@ F 3 "" H 9000 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R56
+L Device:R R50
 U 1 1 5E29973A
 P 8800 1100
-F 0 "R56" V 8880 1100 50  0000 C CNN
+F 0 "R50" V 8880 1100 50  0000 C CNN
 F 1 "100R" V 8700 1100 50  0000 C CNN
 F 2 "Project:r-1206-hand-soldering" V 8730 1100 50  0001 C CNN
 F 3 "" H 8800 1100 50  0001 C CNN
